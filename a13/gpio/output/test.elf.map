@@ -1,0 +1,17 @@
+         U entry
+00002040 T sunxi_gpio_set_cfgpin
+00002076 T sunxi_gpio_get_cfgpin
+0000209c T sunxi_gpio_output
+000020c8 T sunxi_gpio_input
+000020e6 T gpio_request
+000020ea T gpio_free
+000020ee T gpio_direction_input
+00002102 T gpio_direction_output
+0000211a T gpio_get_value
+0000211e T gpio_set_value
+00002180 d _DYNAMIC
+000021e8 d _GLOBAL_OFFSET_TABLE_
+00002200 A _bss_end
+00002200 A _bss_start
+00002200 A _end
+00002200 A _heap_start

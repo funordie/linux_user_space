@@ -1,0 +1,3542 @@
+
+main:     file format elf32-little
+main
+architecture: UNKNOWN!, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00008881
+
+Program Header:
+0x70000001 off    0x00058880 vaddr 0x00060880 paddr 0x00060880 align 2**2
+         filesz 0x00000728 memsz 0x00000728 flags r--
+    LOAD off    0x00000000 vaddr 0x00008000 paddr 0x00008000 align 2**15
+         filesz 0x00058fac memsz 0x00058fac flags r-x
+    LOAD off    0x00058fb0 vaddr 0x00068fb0 paddr 0x00068fb0 align 2**15
+         filesz 0x00000c58 memsz 0x000020dc flags rw-
+    NOTE off    0x00000114 vaddr 0x00008114 paddr 0x00008114 align 2**2
+         filesz 0x00000044 memsz 0x00000044 flags r--
+     TLS off    0x00058fb0 vaddr 0x00068fb0 paddr 0x00068fb0 align 2**2
+         filesz 0x00000010 memsz 0x00000028 flags r--
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+   RELRO off    0x00058fb0 vaddr 0x00068fb0 paddr 0x00068fb0 align 2**0
+         filesz 0x00000050 memsz 0x00000050 flags r--
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .note.ABI-tag 00000020  00008114  00008114  00000114  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.gnu.build-id 00000024  00008134  00008134  00000134  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .init         0000000a  00008158  00008158  00000158  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .text         00042228  00008170  00008170  00000170  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 __libc_freeres_fn 00000800  0004a398  0004a398  00042398  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  5 __libc_thread_freeres_fn 00000090  0004ab98  0004ab98  00042b98  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .fini         00000006  0004ac28  0004ac28  00042c28  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  7 .rodata       00015850  0004ac30  0004ac30  00042c30  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 __libc_subfreeres 0000002c  00060480  00060480  00058480  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 __libc_atexit 00000004  000604ac  000604ac  000584ac  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 __libc_thread_subfreeres 00000004  000604b0  000604b0  000584b0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 11 .ARM.extab    000003cc  000604b4  000604b4  000584b4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 12 .ARM.exidx    00000728  00060880  00060880  00058880  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 13 .eh_frame     00000004  00060fa8  00060fa8  00058fa8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 14 .tdata        00000010  00068fb0  00068fb0  00058fb0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, THREAD_LOCAL
+ 15 .tbss         00000018  00068fc0  00068fc0  00058fc0  2**2
+                  ALLOC, THREAD_LOCAL
+ 16 .init_array   00000004  00068fc0  00068fc0  00058fc0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 17 .fini_array   00000008  00068fc4  00068fc4  00058fc4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 18 .jcr          00000004  00068fcc  00068fcc  00058fcc  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .data.rel.ro  00000030  00068fd0  00068fd0  00058fd0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .got          00000070  00069000  00069000  00059000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 21 .data         00000b98  00069070  00069070  00059070  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 22 .bss          0000146c  00069c08  00069c08  00059c08  2**3
+                  ALLOC
+ 23 __libc_freeres_ptrs 00000018  0006b074  0006b074  00059c08  2**2
+                  ALLOC
+ 24 .comment      0000002a  00000000  00000000  00059c08  2**0
+                  CONTENTS, READONLY
+ 25 .ARM.attributes 00000033  00000000  00000000  00059c32  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00008114 l    d  .note.ABI-tag	00000000 .note.ABI-tag
+00008134 l    d  .note.gnu.build-id	00000000 .note.gnu.build-id
+00008158 l    d  .init	00000000 .init
+00008170 l    d  .text	00000000 .text
+0004a398 l    d  __libc_freeres_fn	00000000 __libc_freeres_fn
+0004ab98 l    d  __libc_thread_freeres_fn	00000000 __libc_thread_freeres_fn
+0004ac28 l    d  .fini	00000000 .fini
+0004ac30 l    d  .rodata	00000000 .rodata
+00060480 l    d  __libc_subfreeres	00000000 __libc_subfreeres
+000604ac l    d  __libc_atexit	00000000 __libc_atexit
+000604b0 l    d  __libc_thread_subfreeres	00000000 __libc_thread_subfreeres
+000604b4 l    d  .ARM.extab	00000000 .ARM.extab
+00060880 l    d  .ARM.exidx	00000000 .ARM.exidx
+00060fa8 l    d  .eh_frame	00000000 .eh_frame
+00068fb0 l    d  .tdata	00000000 .tdata
+00068fc0 l    d  .tbss	00000000 .tbss
+00068fc0 l    d  .init_array	00000000 .init_array
+00068fc4 l    d  .fini_array	00000000 .fini_array
+00068fcc l    d  .jcr	00000000 .jcr
+00068fd0 l    d  .data.rel.ro	00000000 .data.rel.ro
+00069000 l    d  .got	00000000 .got
+00069070 l    d  .data	00000000 .data
+00069c08 l    d  .bss	00000000 .bss
+0006b074 l    d  __libc_freeres_ptrs	00000000 __libc_freeres_ptrs
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00008114 l       .note.ABI-tag	00000000 $d
+00008880 l       .text	00000000 $t
+000608a8 l       .ARM.exidx	00000000 $d
+000088aa l       .text	00000000 $d
+0004ac30 l       .rodata	00000000 $d
+00069070 l       .data	00000000 $d
+000088b8 l       .text	00000000 $t
+000088b9 l     F .text	00000000 call_gmon_start
+000088c8 l       .text	00000000 $d
+00008158 l       .init	00000000 $t
+0004ac28 l       .fini	00000000 $t
+00008160 l       .init	00000000 $t
+0004ac2c l       .fini	00000000 $t
+00016fc4 l       .text	00000000 $t
+00016fc5 l     F .text	00000058 _IO_helper_overflow
+00060ad8 l       .ARM.exidx	00000000 $d
+0001701d l     F .text	000001a0 buffered_vfprintf
+000171b0 l       .text	00000000 $d
+00008170 l       .text	00000000 $t
+00008171 l     F .text	0000009e group_number
+00060880 l       .ARM.exidx	00000000 $d
+00008211 l     F .text	00000164 _i18n_number_rewrite
+0000836c l       .text	00000000 $d
+000171bc l       .text	00000000 $t
+000174a8 l       .text	00000000 $d
+000174c4 l       .text	00000000 $t
+000179ac l       .text	00000000 $d
+000179b0 l       .text	00000000 $t
+000180c0 l       .text	00000000 $d
+000180c8 l       .text	00000000 $t
+00018428 l       .text	00000000 $d
+00018430 l       .text	00000000 $t
+0001893c l       .text	00000000 $d
+0004dc4c l     O .rodata	00000016 __PRETTY_FUNCTION__.11002
+00018950 l       .text	00000000 $t
+00018c28 l       .text	00000000 $d
+00018c40 l       .text	00000000 $t
+0001902c l       .text	00000000 $d
+00019030 l       .text	00000000 $t
+000193e4 l       .text	00000000 $d
+000193ec l       .text	00000000 $t
+00019714 l       .text	00000000 $d
+00019728 l       .text	00000000 $t
+00019a54 l       .text	00000000 $d
+00019a68 l       .text	00000000 $t
+00019e64 l       .text	00000000 $d
+0004dc64 l     O .rodata	00000007 null
+00019e70 l       .text	00000000 $t
+0001a1b0 l       .text	00000000 $d
+0001a1bc l       .text	00000000 $t
+0001a4cc l       .text	00000000 $d
+0001a4e0 l       .text	00000000 $t
+0001a7f8 l       .text	00000000 $d
+00060608 l       .ARM.extab	00000000 $d
+0004d760 l       .rodata	00000000 $d
+0004d760 l     O .rodata	00000054 _IO_helper_jumps
+0004d7b4 l     O .rodata	00000078 step0_jumps.11005
+0004d82c l     O .rodata	0000005b jump_table.10986
+0004d888 l     O .rodata	00000078 step1_jumps.11036
+0004d900 l     O .rodata	00000078 step2_jumps.11037
+0004d978 l     O .rodata	00000078 step3a_jumps.11038
+0004d9f0 l     O .rodata	00000078 step4_jumps.11041
+0004da68 l     O .rodata	00000078 step3b_jumps.11040
+0004dae0 l     O .rodata	00000078 step4_jumps.11192
+0004db58 l       .rodata	00000000 $d
+0001a810 l       .text	00000000 $t
+0001a811 l     F .text	000000c6 hack_digit.12067
+00008374 l       .text	00000000 $t
+00008375 l     F .text	00000164 _i18n_number_rewrite
+000084d0 l       .text	00000000 $d
+0001abf0 l       .text	00000000 $d
+0001ac30 l       .text	00000000 $t
+0001af34 l       .text	00000000 $d
+0001af48 l       .text	00000000 $t
+0001b290 l       .text	00000000 $d
+0001b294 l       .text	00000000 $t
+0001b738 l       .text	00000000 $d
+0001b73c l       .text	00000000 $t
+0001c078 l       .text	00000000 $d
+0004db58 l       .rodata	00000000 $d
+0004dc7c l       .rodata	00000000 $d
+00027444 l       .text	00000000 $t
+00027445 l     F .text	0000008e is_dst
+000274d5 l     F .text	00000020 local_strdup
+000274f5 l     F .text	000001f8 fillin_rpath
+000276d8 l       .text	00000000 $d
+0004fac8 l     O .rodata	00000003 curwd.8759
+000276ec l       .text	00000000 $t
+000276ed l     F .text	00000078 add_name_to_object
+00027754 l       .text	00000000 $d
+0004fadc l     O .rodata	00000013 __PRETTY_FUNCTION__.8740
+000084d8 l       .text	00000000 $t
+000084d9 l     F .text	000000c4 is_trusted_path_normalize
+00008598 l       .text	00000000 $d
+0000859c l       .text	00000000 $t
+0000859d l     F .text	000000fc print_search_path
+0000867c l       .text	00000000 $d
+00027764 l       .text	00000000 $t
+00027765 l     F .text	00000218 check_arm_attributes_hfabi
+00027968 l       .text	00000000 $d
+0002797c l       .text	00000000 $t
+0002797d l     F .text	00000046 lose
+000279c5 l     F .text	00000a70 _dl_map_object_from_fd
+00027b40 l       .text	00000000 $d
+00027b44 l       .text	00000000 $t
+00027e48 l       .text	00000000 $d
+00027e54 l       .text	00000000 $t
+00028254 l       .text	00000000 $d
+0004fb24 l     O .rodata	00000015 __PRETTY_FUNCTION__.8623
+000282a0 l       .text	00000000 $t
+000283f8 l       .text	00000000 $d
+0004fb0c l     O .rodata	00000017 __PRETTY_FUNCTION__.8874
+00028434 l       .text	00000000 $t
+00028435 l     F .text	00000368 open_verify.isra.2
+0002870c l       .text	00000000 $d
+00028758 l       .text	00000000 $t
+0002878c l       .text	00000000 $d
+0002879c l       .text	00000000 $t
+0002879d l     F .text	00000270 open_path.isra.3
+000289f0 l       .text	00000000 $d
+00028a0c l       .text	00000000 $t
+00028a0d l     F .text	0000008a add_path.9137.constprop.5
+00028afc l       .text	00000000 $d
+00028b0c l       .text	00000000 $t
+00028cb8 l       .text	00000000 $d
+00028cc8 l       .text	00000000 $t
+00028cc9 l     F .text	000000c8 expand_dynamic_string_token
+00028d80 l       .text	00000000 $d
+0004faf0 l     O .rodata	0000001c __PRETTY_FUNCTION__.8718
+00028d90 l       .text	00000000 $t
+00028d91 l     F .text	00000118 cache_rpath
+00028e94 l       .text	00000000 $d
+00028ea8 l       .text	00000000 $t
+00029060 l       .text	00000000 $d
+0004fab8 l     O .rodata	0000000f __PRETTY_FUNCTION__.8822
+00029098 l       .text	00000000 $t
+0002932c l       .text	00000000 $d
+00029358 l       .text	00000000 $t
+000295c0 l       .text	00000000 $d
+0004facc l     O .rodata	0000000f __PRETTY_FUNCTION__.9081
+0004f218 l     O .rodata	00000004 dummy_bucket.9126
+00029600 l       .text	00000000 $t
+000296f0 l       .text	00000000 $d
+0004f18c l       .rodata	00000000 $d
+0004f18c l     O .rodata	00000044 system_dirs
+0004f1d0 l     O .rodata	00000010 system_dirs_len
+0004f1e0 l     O .rodata	00000010 expected.9002
+0004f1f0 l     O .rodata	00000009 expected2.9000
+0004f1fc l     O .rodata	00000009 expected3.9001
+0004f208 l     O .rodata	00000010 expected_note.9008
+0004f218 l       .rodata	00000000 $d
+00068fe0 l       .data.rel.ro	00000000 $d
+00068fe0 l     O .data.rel.ro	00000004 ncapstr
+00068fe4 l     O .data.rel.ro	00000004 max_capstrlen
+00068fe8 l     O .data.rel.ro	00000004 capstr
+00068ff0 l     O .data.rel.ro	00000008 rtld_search_dirs
+00068ff8 l     O .data.rel.ro	00000008 env_path_list
+000699cc l       .data	00000000 $d
+000699cc l     O .data	00000004 all_hf.8984
+0004f21c l       .rodata	00000000 $d
+0006acbc l       .bss	00000000 $d
+0006acbc l     O .bss	00000004 max_dirnamelen
+00008698 l       .text	00000000 $t
+00008699 l     F .text	00000068 strip
+000086fc l       .text	00000000 $d
+000335c0 l       .text	00000000 $t
+00033894 l       .text	00000000 $d
+000338c4 l       .text	00000000 $t
+0003390c l       .text	00000000 $d
+00051358 l     O .rodata	00000010 __PRETTY_FUNCTION__.8353
+00033918 l       .text	00000000 $t
+00033948 l       .text	00000000 $d
+000512a0 l       .rodata	00000000 $d
+000512d4 l     O .rodata	00000034 codeset_idx.8348
+00051308 l       .rodata	00000000 $d
+0003af5c l       .text	00000000 $t
+0003af5d l     F .text	00000068 _IO_helper_overflow
+00060e60 l       .ARM.exidx	00000000 $d
+00008700 l       .text	00000000 $t
+00008701 l     F .text	0000008a group_number
+00060898 l       .ARM.exidx	00000000 $d
+0000878d l     F .text	000000e8 _i18n_number_rewrite
+0000886c l       .text	00000000 $d
+0003e8b9 l     F .text	00000184 buffered_vfprintf
+0003b2b8 l       .text	00000000 $d
+0003b2d4 l       .text	00000000 $t
+0003bbd8 l       .text	00000000 $d
+0003bbdc l       .text	00000000 $t
+0003bf78 l       .text	00000000 $d
+0003bf80 l       .text	00000000 $t
+0003cce0 l       .text	00000000 $d
+0005e6bc l     O .rodata	0000000e __PRETTY_FUNCTION__.11028
+0003cd00 l       .text	00000000 $t
+0003d04c l       .text	00000000 $d
+0003d058 l       .text	00000000 $t
+0003d394 l       .text	00000000 $d
+0003d3a0 l       .text	00000000 $t
+0003d6b0 l       .text	00000000 $d
+0005e6e4 l     O .rodata	0000001c null
+0003d6b8 l       .text	00000000 $t
+0003da6c l       .text	00000000 $d
+0003da88 l       .text	00000000 $t
+0003dd98 l       .text	00000000 $d
+0003ddac l       .text	00000000 $t
+0003e154 l       .text	00000000 $d
+0003e16c l       .text	00000000 $t
+0003e4c0 l       .text	00000000 $d
+0003e4d0 l       .text	00000000 $t
+0003e820 l       .text	00000000 $d
+0003e83c l       .text	00000000 $t
+0006080c l       .ARM.extab	00000000 $d
+0003ea30 l       .text	00000000 $d
+0005e2c4 l       .rodata	00000000 $d
+0005e2c4 l     O .rodata	00000078 step0_jumps.11031
+0005e33c l     O .rodata	0000005b jump_table.11012
+0005e398 l     O .rodata	00000078 step1_jumps.11062
+0005e410 l     O .rodata	00000078 step2_jumps.11063
+0005e488 l     O .rodata	00000078 step3a_jumps.11064
+0005e500 l     O .rodata	00000078 step4_jumps.11067
+0005e578 l     O .rodata	00000078 step3b_jumps.11066
+0005e5f0 l     O .rodata	00000078 step4_jumps.11209
+0005e668 l     O .rodata	00000054 _IO_helper_jumps
+0004db58 l       .rodata	00000000 $d
+0005e6cc l       .rodata	00000000 $d
+0004547c l       .text	00000000 $t
+0004547d l     F .text	0000002c init
+0004549c l       .text	00000000 $d
+00045619 l     F .text	0000002c free_key_mem
+000454a8 l       .text	00000000 $t
+000455a0 l       .text	00000000 $d
+000455d0 l       .text	00000000 $t
+000455d1 l     F .text	00000048 check_free
+00045610 l       .text	00000000 $d
+00045618 l       .text	00000000 $t
+0004563c l       .text	00000000 $d
+00045644 l       .text	00000000 $t
+000456e8 l       .text	00000000 $d
+00008874 l       .text	00000000 $t
+00008875 l     F .text	0000000c fini
+0000887c l       .text	00000000 $d
+00068fc8 l       .fini_array	00000000 $d
+00045704 l       .text	00000000 $t
+00045714 l       .text	00000000 $d
+00069bd4 l       .data	00000000 $d
+00069bd4 l     O .data	00000034 _dlfcn_hooks
+0005fd0c l       .rodata	00000000 $d
+0006adf0 l       .bss	00000000 $d
+0006adf0 l     O .bss	00000004 key
+0006adf4 l     O .bss	00000004 static_buf
+0006adf8 l     O .bss	00000014 last_result
+0006ae0c l     O .bss	00000004 once
+00000000 l    df *ABS*	00000000 crtstuff.c
+00060fa8 l     O .eh_frame	00000000 __EH_FRAME_BEGIN__
+00068fcc l     O .jcr	00000000 __JCR_LIST__
+00069074 l       .data	00000000 $d
+000088d0 l       .text	00000000 $t
+000088d1 l     F .text	00000000 __do_global_dtors_aux
+000088e8 l       .text	00000000 $d
+00069c08 l     O .bss	00000001 completed.5675
+00068fc4 l       .fini_array	00000000 $d
+00068fc4 l     O .fini_array	00000000 __do_global_dtors_aux_fini_array_entry
+000088f4 l       .text	00000000 $t
+000088f5 l     F .text	00000000 frame_dummy
+00008910 l       .text	00000000 $d
+00069c0c l     O .bss	00000018 object.5680
+00068fc0 l       .init_array	00000000 $d
+00068fc0 l     O .init_array	00000000 __frame_dummy_init_array_entry
+00069c09 l       .bss	00000000 $d
+00000000 l    df *ABS*	00000000 main.c
+0004ac34 l       .rodata	00000000 $d
+00008924 l       .text	00000000 $t
+0000893c l       .text	00000000 $t
+00008ab8 l       .text	00000000 $d
+000608a8 l       .ARM.exidx	00000000 $d
+00068fd0 l       .data.rel.ro	00000000 $d
+0004ac40 l       .rodata	00000000 $d
+00008acc l       .text	00000000 $t
+00008acd l     F .text	0000009c check_one_fd
+00008b58 l       .text	00000000 $d
+00008b68 l       .text	00000000 $t
+0004ac80 l       .rodata	00000000 $d
+00008b8c l       .text	00000000 $t
+00008d08 l       .text	00000000 $d
+00008d30 l       .text	00000000 $t
+00069078 l       .data	00000000 $d
+0004ac98 l       .rodata	00000000 $d
+00069c28 l       .bss	00000000 $d
+00069c28 l     O .bss	00000200 static_dtv
+00069e28 l     O .bss	00000258 static_map
+0006a080 l     O .bss	00000208 static_slotinfo
+00008dbc l       .text	00000000 $t
+00008e20 l       .text	00000000 $d
+00008e30 l       .text	00000000 $t
+00008e54 l       .text	00000000 $d
+00000010 l       .tbss	00000000 $d
+00008e60 l       .text	00000000 $t
+000608b8 l       .ARM.exidx	00000000 $d
+00008e70 l       .text	00000000 $a
+00008e80 l       .text	00000000 $t
+00008ff8 l       .text	00000000 $d
+0006a288 l       .bss	00000000 $d
+0006a288 l     O .bss	0000000c lock
+0006a294 l     O .bss	00000004 stage
+00008ffc l       .text	00000000 $t
+00009068 l       .text	00000000 $d
+00009070 l       .text	00000000 $t
+00009080 l       .text	00000000 $t
+0000919c l       .text	00000000 $d
+0004accc l     O .rodata	0000000d __PRETTY_FUNCTION__.5786
+000091b0 l       .text	00000000 $t
+0006907c l       .data	00000000 $d
+0006a2a0 l     O .bss	00000208 initial
+0004aca8 l       .rodata	00000000 $d
+0006a29c l       .bss	00000000 $d
+0006a29c l     O .bss	00000004 lock
+000091e8 l       .text	00000000 $t
+00009340 l       .text	00000000 $d
+000604b4 l       .ARM.extab	00000000 $d
+000608c8 l       .ARM.exidx	00000000 $d
+00009344 l       .text	00000000 $t
+00009348 l       .text	00000000 $t
+0000962c l       .text	00000000 $d
+00009660 l       .text	00000000 $t
+00009670 l       .text	00000000 $d
+0004acdc l       .rodata	00000000 $d
+0004a398 l       __libc_freeres_fn	00000000 $t
+0004a399 l     F __libc_freeres_fn	00000030 buffer_free
+0004a3c4 l       __libc_freeres_fn	00000000 $d
+00060f98 l       .ARM.exidx	00000000 $d
+00009674 l       .text	00000000 $t
+00009675 l     F .text	000000a8 flush_cleanup
+00009714 l       .text	00000000 $d
+000608d8 l       .ARM.exidx	00000000 $d
+0000971c l       .text	00000000 $t
+0000971d l     F .text	0000010e save_for_backup
+000099dc l       .text	00000000 $d
+000099f0 l       .text	00000000 $t
+00009b80 l       .text	00000000 $d
+00009b94 l       .text	00000000 $t
+000604cc l       .ARM.extab	00000000 $d
+0000a31c l       .text	00000000 $d
+0000a330 l       .text	00000000 $t
+0000a444 l       .text	00000000 $d
+0000a44c l       .text	00000000 $t
+0000a5fc l       .text	00000000 $d
+0000a610 l       .text	00000000 $t
+0000a858 l       .text	00000000 $d
+0000a85c l       .text	00000000 $t
+0000a8ac l       .text	00000000 $d
+0000a8b4 l       .text	00000000 $t
+00060480 l       __libc_subfreeres	00000000 $d
+00060480 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_buffer_free__
+000604ac l       __libc_atexit	00000000 $d
+000604ac l     O __libc_atexit	00000004 __elf_set___libc_atexit_element__IO_cleanup__
+0006a4a8 l       .bss	00000000 $d
+0006a4a8 l     O .bss	00000001 dealloc_buffers
+0006a4ac l     O .bss	00000004 freeres_list
+0006a4b0 l     O .bss	00000004 run_fp
+0006a4b4 l     O .bss	0000000c list_all_lock
+0006a4c0 l     O .bss	00000004 _IO_list_all_stamp
+00069080 l       .data	00000000 $d
+0006a4c4 l     O .bss	0000000c _IO_stdfile_2_lock
+00069268 l     O .data	000000bc _IO_wide_data_2
+0006a4d0 l     O .bss	0000000c _IO_stdfile_1_lock
+00069324 l     O .data	000000bc _IO_wide_data_1
+0006a4dc l     O .bss	0000000c _IO_stdfile_0_lock
+000693e0 l     O .data	000000bc _IO_wide_data_0
+0006a4c4 l       .bss	00000000 $d
+000694a0 l       .data	00000000 $d
+0000a8c8 l       .text	00000000 $t
+0000a8c9 l     F .text	00000074 ptmalloc_unlock_all2
+0000a928 l       .text	00000000 $d
+0000a93c l       .text	00000000 $t
+0000a93d l     F .text	0000004a mem2mem_check
+0000a989 l     F .text	00000194 mem2chunk_check
+0000ab14 l       .text	00000000 $d
+0000ab1c l       .text	00000000 $t
+0000ab1d l     F .text	0000008c sYSTRIm
+0000ab9c l       .text	00000000 $d
+0000aba8 l       .text	00000000 $t
+0000aba9 l     F .text	0000005c __malloc_assert
+0000abf0 l       .text	00000000 $d
+0000ac04 l       .text	00000000 $t
+0000ac05 l     F .text	00000134 new_heap
+0000ad30 l       .text	00000000 $d
+0000ad38 l       .text	00000000 $t
+0000ad39 l     F .text	0000033c mi_arena.11907
+0000b008 l       .text	00000000 $d
+0000b024 l       .text	00000000 $t
+0000b070 l       .text	00000000 $d
+0000b074 l       .text	00000000 $t
+0000b075 l     F .text	000000c8 mremap_chunk
+0000b11c l       .text	00000000 $d
+0004c17c l     O .rodata	0000000d __func__.10563
+0000b13c l       .text	00000000 $t
+0000b13d l     F .text	000000d0 ptmalloc_unlock_all
+0000b1f4 l       .text	00000000 $d
+0004ab98 l       __libc_thread_freeres_fn	00000000 $t
+0004ab99 l     F __libc_thread_freeres_fn	00000090 arena_thread_freeres
+0004ac1c l       __libc_thread_freeres_fn	00000000 $d
+0000b20c l       .text	00000000 $t
+0000b20d l     F .text	00000104 ptmalloc_lock_all
+0000b2ec l       .text	00000000 $d
+0000e3e5 l     F .text	000000d4 malloc_atfork
+0000d355 l     F .text	0000004c free_atfork
+0000b310 l       .text	00000000 $t
+0000b311 l     F .text	00000080 malloc_printerr
+0000b380 l       .text	00000000 $d
+0000b390 l       .text	00000000 $t
+0000b391 l     F .text	000000dc top_check
+0000b458 l       .text	00000000 $d
+0000b46c l       .text	00000000 $t
+0000b46d l     F .text	00000288 malloc_consolidate
+0000b6d0 l       .text	00000000 $d
+0004c134 l     O .rodata	00000013 __func__.11670
+0000b6f4 l       .text	00000000 $t
+0000b6f5 l     F .text	000000ac mALLINFo
+0000b79c l       .text	00000000 $d
+0000b7a0 l       .text	00000000 $t
+0000b7a1 l     F .text	0000007c munmap_chunk
+0000b804 l       .text	00000000 $d
+0004c154 l     O .rodata	0000000d __func__.10552
+0000b81c l       .text	00000000 $t
+0000b81d l     F .text	00000810 _int_free
+0000bb3c l       .text	00000000 $d
+0000bb44 l       .text	00000000 $t
+0000be58 l       .text	00000000 $d
+0004c170 l     O .rodata	0000000a __func__.9861
+0000be98 l       .text	00000000 $t
+0000bfec l       .text	00000000 $d
+0004c164 l     O .rodata	0000000a __func__.11533
+0000c02c l       .text	00000000 $t
+0000c02d l     F .text	00000da4 _int_malloc
+0000c350 l       .text	00000000 $d
+0000c354 l       .text	00000000 $t
+0000c718 l       .text	00000000 $d
+0004c128 l     O .rodata	0000000c __func__.11467
+0004c148 l     O .rodata	0000000a __func__.10521
+0000c73c l       .text	00000000 $t
+0000cb38 l       .text	00000000 $d
+0000cb68 l       .text	00000000 $t
+0000cd9c l       .text	00000000 $d
+0000cdd0 l       .text	00000000 $t
+0000cdd1 l     F .text	000000ac malloc_check
+0000ce74 l       .text	00000000 $d
+0000ce7c l       .text	00000000 $t
+0000ce7d l     F .text	00000180 _int_memalign
+0000cfe8 l       .text	00000000 $d
+0004c118 l     O .rodata	0000000e __func__.11716
+0000cffc l       .text	00000000 $t
+0000cffd l     F .text	000000c8 memalign_check
+0000d0bc l       .text	00000000 $d
+0000d0c4 l       .text	00000000 $t
+0000d0c5 l     F .text	00000290 _int_realloc
+0000d328 l       .text	00000000 $d
+0004c18c l     O .rodata	0000000d __func__.11695
+0000d354 l       .text	00000000 $t
+0000d398 l       .text	00000000 $d
+0000d3a0 l       .text	00000000 $t
+0000d3a1 l     F .text	00000124 free_check
+0000d4bc l       .text	00000000 $d
+0000d4c4 l       .text	00000000 $t
+0000d4c5 l     F .text	00000210 realloc_check
+0000d6c4 l       .text	00000000 $d
+0000d6d4 l       .text	00000000 $t
+0000d6d5 l     F .text	00000334 arena_get2.isra.6
+0000d9ac l       .text	00000000 $d
+0000d9c4 l       .text	00000000 $t
+0000da34 l       .text	00000000 $d
+0000da58 l       .text	00000000 $t
+0000da59 l     F .text	000002a0 ptmalloc_init
+0000dcf9 l     F .text	00000120 mALLOPt
+0000db3c l       .text	00000000 $d
+0000db64 l       .text	00000000 $t
+0000dcac l       .text	00000000 $d
+0000dcf8 l       .text	00000000 $t
+0000dd3c l       .text	00000000 $d
+0000dd46 l       .text	00000000 $t
+0000de10 l       .text	00000000 $d
+0000de18 l       .text	00000000 $t
+0000e14c l       .text	00000000 $d
+0004c19c l     O .rodata	00000013 __func__.10464
+0000e178 l       .text	00000000 $t
+0000e198 l       .text	00000000 $d
+0000e19c l       .text	00000000 $t
+0000e3cc l       .text	00000000 $d
+0004c1b0 l     O .rodata	0000000e __func__.10729
+0000e3e4 l       .text	00000000 $t
+0000e4a4 l       .text	00000000 $d
+0000e4b8 l       .text	00000000 $t
+0000e4b9 l     F .text	0000001e malloc_hook_ini
+0000e634 l       .text	00000000 $d
+0000e640 l       .text	00000000 $t
+0000e6a8 l       .text	00000000 $d
+0000e6b0 l       .text	00000000 $t
+0000e880 l       .text	00000000 $d
+0004c1c0 l     O .rodata	0000000f __func__.10791
+0000e89c l       .text	00000000 $t
+0000e89d l     F .text	0000002c realloc_hook_ini
+0000eb20 l       .text	00000000 $d
+0004c1d0 l     O .rodata	00000010 __func__.10960
+0000eb38 l       .text	00000000 $t
+0000eb39 l     F .text	00000022 memalign_hook_ini
+0000ed48 l       .text	00000000 $d
+0004c1e0 l     O .rodata	0000000e __func__.11072
+0000ed64 l       .text	00000000 $t
+0000ef60 l       .text	00000000 $d
+0004c1f0 l     O .rodata	0000000f __func__.11186
+0000ef7c l       .text	00000000 $t
+0000f23c l       .text	00000000 $d
+0000f250 l       .text	00000000 $t
+0000f290 l       .text	00000000 $d
+0004c200 l     O .rodata	0000000e __func__.11244
+0000f2a0 l       .text	00000000 $t
+0000f470 l       .text	00000000 $d
+0004c210 l     O .rodata	00000006 __func__.11739
+0000f484 l       .text	00000000 $t
+0000f5d4 l       .text	00000000 $d
+0000f5f4 l       .text	00000000 $t
+0000f678 l       .text	00000000 $d
+0000f67c l       .text	00000000 $t
+0000f6c4 l       .text	00000000 $d
+0000f6c8 l       .text	00000000 $t
+0000f73c l       .text	00000000 $d
+000604b0 l       __libc_thread_subfreeres	00000000 $d
+000604b0 l     O __libc_thread_subfreeres	00000004 __elf_set___libc_thread_subfreeres_element_arena_thread_freeres__
+000694ac l       .data	00000000 $d
+000694ac l     O .data	00000450 main_arena
+00069900 l     O .data	00000034 mp_
+00069938 l     O .data	00000004 check_action
+0006993c l     O .data	00000004 narenas
+0004fe60 l       .rodata	00000000 $d
+00000014 l       .tbss	00000000 $d
+00000014 l       .tbss	00000004 __libc_tsd_MALLOC
+0006a4e8 l       .bss	00000000 $d
+0006a4e8 l     O .bss	00000004 save_arena
+0006a4ec l     O .bss	00000004 save_malloc_hook
+0006a4f0 l     O .bss	00000004 save_free_hook
+0006a4f4 l     O .bss	00000004 free_list
+0006a4f8 l     O .bss	00000004 list_lock
+0006a4fc l     O .bss	00000004 atfork_recursive_cntr
+0006a500 l     O .bss	00000004 aligned_heap_area
+0006a504 l     O .bss	00000004 global_max_fast
+0006a508 l     O .bss	00000004 perturb_byte
+0006a50c l     O .bss	00000004 arena_mem
+0006a510 l     O .bss	00000004 narenas_limit.9985
+0006a514 l     O .bss	00000004 next_to_use.9964
+0006a518 l     O .bss	00000004 disallow_malloc_check
+0006a51c l     O .bss	00000004 using_malloc_checking
+0006a520 l     O .bss	0000001c atfork_mem
+0000f748 l       .text	00000000 $t
+0000f760 l       .text	00000000 $a
+0000f788 l       .text	00000000 Laligned
+0000f7a4 l       .text	00000000 Llastword
+0000f7c0 l       .text	00000000 $t
+0000fa90 l       .text	00000000 $a
+0000fdd0 l       .text	00000000 $a
+0000fe50 l       .text	00000000 $t
+0000fec0 l       .text	00000000 $a
+000101f0 l       .text	00000000 $t
+00010200 l       .text	00000000 $d
+00010208 l       .text	00000000 $t
+00010364 l       .text	00000000 $d
+0001036c l       .text	00000000 $t
+00010207 l       .text	00000000 $d
+0001036b l       .text	00000000 $d
+000104cc l       .text	00000000 $t
+00010568 l       .text	00000000 $t
+000105b8 l       .text	00000000 $d
+000105c0 l       .text	00000000 $a
+00060968 l       .ARM.exidx	00000000 $d
+0006a548 l       .bss	00000000 $d
+000105e0 l       .text	00000000 $a
+00060970 l       .ARM.exidx	00000000 $d
+00010600 l       .text	00000000 $t
+0001062c l       .text	00000000 $d
+00010630 l       .text	00000000 $t
+00010670 l       .text	00000000 $d
+000604e4 l       .ARM.extab	00000000 $d
+00060978 l       .ARM.exidx	00000000 $d
+00010674 l       .text	00000000 $t
+00010704 l       .text	00000000 $d
+00010710 l       .text	00000000 $t
+0001075c l       .text	00000000 $d
+00010764 l       .text	00000000 $t
+00010765 l     F .text	0000013c openlog_internal
+00010884 l       .text	00000000 $d
+00060990 l       .ARM.exidx	00000000 $d
+000108a0 l       .text	00000000 $t
+000108a1 l     F .text	0000004c cancel_handler
+000108e4 l       .text	00000000 $d
+000108ec l       .text	00000000 $t
+000108ed l     F .text	00000024 closelog_internal
+00010908 l       .text	00000000 $d
+00010910 l       .text	00000000 $t
+00010b94 l       .text	00000000 $d
+00010bcc l       .text	00000000 $t
+00010c7c l       .text	00000000 $d
+000604fc l       .ARM.extab	00000000 $d
+00010c88 l       .text	00000000 $t
+00010d44 l       .text	00000000 $d
+00010d4c l       .text	00000000 $t
+00010db0 l       .text	00000000 $d
+00010dc0 l       .text	00000000 $t
+00010dcc l       .text	00000000 $d
+0006994c l       .data	00000000 $d
+0006994c l     O .data	00000004 LogFacility
+00069950 l     O .data	00000004 LogFile
+00069954 l     O .data	00000004 LogType
+00069958 l     O .data	00000004 LogMask
+0004c218 l       .rodata	00000000 $d
+0006a54c l       .bss	00000000 $d
+0006a54c l     O .bss	00000004 LogTag
+0006a550 l     O .bss	00000004 LogStat
+0006a554 l     O .bss	0000006e SyslogAddr
+0006a5c4 l     O .bss	00000004 connected
+0006a5c8 l     O .bss	00000004 syslog_lock
+00010dd0 l       .text	00000000 $a
+000609e0 l       .ARM.exidx	00000000 $d
+00010e20 l       .text	00000000 $a
+000609e8 l       .ARM.exidx	00000000 $d
+00010e40 l       .text	00000000 $a
+000609e8 l       .ARM.exidx	00000000 $d
+00010e60 l       .text	00000000 $a
+000609e8 l       .ARM.exidx	00000000 $d
+00010e80 l       .text	00000000 $t
+00010e81 l     F .text	000000b0 phys_pages_info
+00010f24 l       .text	00000000 $d
+00060578 l       .ARM.extab	00000000 $d
+000609e8 l       .ARM.exidx	00000000 $d
+00010f30 l       .text	00000000 $t
+00010f31 l     F .text	00000184 next_line
+000110a0 l       .text	00000000 $d
+0004c360 l     O .rodata	0000000a __PRETTY_FUNCTION__.9200
+000110b4 l       .text	00000000 $t
+000112ac l       .text	00000000 $d
+000112cc l       .text	00000000 $t
+0001133c l       .text	00000000 $d
+00011344 l       .text	00000000 $t
+0004c290 l       .rodata	00000000 $d
+0006a5cc l       .bss	00000000 $d
+0006a5cc l     O .bss	00000004 timestamp.9204
+0006a5d0 l     O .bss	00000004 cached_result.9203
+0001135c l       .text	00000000 $t
+00011380 l       .text	00000000 $d
+0006995c l       .data	00000000 $d
+0005fd0c l       .rodata	00000000 $d
+00011390 l       .text	00000000 $a
+00060a10 l       .ARM.exidx	00000000 $d
+000113b0 l       .text	00000000 $d
+000113b4 l       .text	00000000 $a
+00060a18 l       .ARM.exidx	00000000 $d
+00060584 l       .ARM.extab	00000000 $d
+00011438 l       .text	00000000 $d
+0001143c l       .text	00000000 $a
+00011440 l       .text	00000000 $d
+00011444 l       .text	00000000 $a
+00060a30 l       .ARM.exidx	00000000 $d
+0006059c l       .ARM.extab	00000000 $d
+000114c8 l       .text	00000000 $d
+000114cc l       .text	00000000 $a
+000114d0 l       .text	00000000 $a
+00060a48 l       .ARM.exidx	00000000 $d
+000114ec l       .text	00000000 $d
+000114f0 l       .text	00000000 $t
+00011514 l       .text	00000000 $t
+00011574 l       .text	00000000 $t
+00060a58 l       .ARM.exidx	00000000 $d
+0004a3c8 l       __libc_freeres_fn	00000000 $t
+0004a3c9 l     F __libc_freeres_fn	000000a0 free_mem
+0004a45c l       __libc_freeres_fn	00000000 $d
+00011658 l       .text	00000000 $t
+00011680 l       .text	00000000 $d
+00011684 l       .text	00000000 $t
+0001176c l       .text	00000000 $d
+00060484 l       __libc_subfreeres	00000000 $d
+00060484 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+0006a5d4 l       .bss	00000000 $d
+0006a5d8 l     O .bss	00000544 fork_handler_pool
+00011774 l       .text	00000000 $t
+000605b4 l       .ARM.extab	00000000 $d
+00060a70 l       .ARM.exidx	00000000 $d
+000118a0 l       .text	00000000 $t
+000118a1 l     F .text	00000048 backtrace_helper
+00060a78 l       .ARM.exidx	00000000 $d
+0001192c l       .text	00000000 $d
+000605cc l       .ARM.extab	00000000 $d
+00011930 l       .text	00000000 $t
+0004c36c l       .rodata	00000000 $d
+00011b10 l       .text	00000000 $t
+00011b96 l       .text	00000000 $d
+00011bd4 l       .text	00000000 $t
+00011d80 l       .text	00000000 $d
+00011d9c l       .text	00000000 $t
+00011f58 l       .text	00000000 $d
+00011fc0 l       .text	00000000 $t
+0004c37c l       .rodata	00000000 $d
+0004c394 l     O .rodata	00000105 unsecure_envvars.8604
+00068fd4 l       .data.rel.ro	00000000 $d
+00069964 l       .data	00000000 $d
+0005fd0c l       .rodata	00000000 $d
+0006ab20 l       .bss	00000000 $d
+0006ab28 l     O .bss	00000008 result.8620
+0006ab30 l     O .bss	00000001 buf.8621
+00011fdc l       .text	00000000 $t
+00012220 l       .text	00000000 $d
+00012238 l       .text	00000000 $t
+0001226c l       .text	00000000 $d
+00068fdc l       .data.rel.ro	00000000 $d
+00012274 l       .text	00000000 $t
+00012314 l       .text	00000000 $d
+0004c5bc l       .rodata	00000000 $d
+00012318 l       .text	00000000 $t
+00012364 l       .text	00000000 $d
+0001237c l       .text	00000000 $t
+000699b4 l       .data	00000000 $d
+00012390 l       .text	00000000 $a
+00012394 l       .text	00000000 __syscall_error_1
+000123bc l       .text	00000000 $d
+0004c5d8 l       .rodata	00000000 $d
+0004c64c l       .rodata	00000000 $d
+0004c684 l       .rodata	00000000 $d
+0004c694 l       .rodata	00000000 $d
+0004c774 l     O .rodata	00000002 not_available
+0005fd0c l       .rodata	00000000 $d
+0004c778 l       .rodata	00000000 $d
+0004c7b4 l       .rodata	00000000 $d
+0004c7b8 l       .rodata	00000000 $d
+0004c7e8 l       .rodata	00000000 $d
+0004c828 l       .rodata	00000000 $d
+0004c838 l       .rodata	00000000 $d
+0004c890 l       .rodata	00000000 $d
+0004c8bc l       .rodata	00000000 $d
+0004c8f4 l       .rodata	00000000 $d
+0004c900 l       .rodata	00000000 $d
+0004c92c l       .rodata	00000000 $d
+0004c930 l       .rodata	00000000 $d
+0004ca38 l       .rodata	00000000 $d
+0004cb14 l       .rodata	00000000 $d
+0004cb84 l     O .rodata	00000100 collseqmb
+0004cc84 l     O .rodata	0000041c collseqwc
+000123c0 l       .text	00000000 $t
+000124a0 l       .text	00000000 $d
+0004d0cc l     O .rodata	00000013 errstr.9967
+000124c4 l       .text	00000000 $t
+0004fe60 l       .rodata	00000000 $d
+000124f4 l       .text	00000000 $t
+00012504 l       .text	00000000 $d
+00012508 l       .text	00000000 $t
+00012518 l       .text	00000000 $d
+0001251c l       .text	00000000 $t
+00012530 l       .text	00000000 $d
+00012534 l       .text	00000000 $t
+0001256c l       .text	00000000 $d
+00000018 l       .tbss	00000000 $d
+00012574 l       .text	00000000 $t
+00012588 l       .text	00000000 $t
+00012589 l     F .text	000000fc plural_eval
+00012598 l       .text	00000000 $d
+0001259c l       .text	00000000 $t
+0001261c l       .text	00000000 $d
+00012628 l       .text	00000000 $t
+0004a468 l       __libc_freeres_fn	00000000 $t
+0004a469 l     F __libc_freeres_fn	00000078 free_mem
+0004a4c8 l       __libc_freeres_fn	00000000 $d
+00012685 l     F .text	00000036 plural_lookup
+000126bd l     F .text	00000040 transcmp
+00012b6c l       .text	00000000 $d
+00012b88 l       .text	00000000 $t
+00012e7c l       .text	00000000 $d
+00012e94 l       .text	00000000 $t
+00012ef0 l       .text	00000000 $d
+00012ef8 l       .text	00000000 $t
+000131b4 l       .text	00000000 $d
+000131f8 l       .text	00000000 $t
+00013400 l       .text	00000000 $d
+00060488 l       __libc_subfreeres	00000000 $d
+00060488 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000699b8 l       .data	00000000 $d
+0004d0e0 l       .rodata	00000000 $d
+0006ab40 l       .bss	00000000 $d
+0006ab40 l     O .bss	00000004 root
+0006ab44 l     O .bss	00000004 transmem_list
+0006ab48 l     O .bss	00000004 output_charset_cached.9059
+0006ab4c l     O .bss	00000004 output_charset_cache.9058
+0006ab50 l     O .bss	00000004 lock.8888
+0006ab54 l     O .bss	00000004 freemem.8932
+0006ab58 l     O .bss	00000004 freemem_size.8933
+0006ab7c l     O .bss	00000020 tree_lock.8616
+00012627 l       .text	00000000 $d
+0001342c l       .text	00000000 $t
+000135a0 l       .text	00000000 $d
+0004a4e0 l       __libc_freeres_fn	00000000 $t
+0004a50c l       __libc_freeres_fn	00000000 $d
+0006ab9c l       .bss	00000000 $d
+0006ab9c l     O .bss	00000020 lock.9129
+0006abbc l     O .bss	00000004 _nl_loaded_domains
+000135b4 l       .text	00000000 $t
+00013814 l       .text	00000000 $d
+00013824 l       .text	00000000 $t
+00013b5c l       .text	00000000 $d
+00013b6c l       .text	00000000 $t
+00013e8c l       .text	00000000 $d
+00013e90 l       .text	00000000 $t
+000141c0 l       .text	00000000 $d
+000141f4 l       .text	00000000 $t
+000143c8 l       .text	00000000 $d
+0004a510 l       __libc_freeres_fn	00000000 $t
+0004a58c l       __libc_freeres_fn	00000000 $d
+0004ef70 l       .rodata	00000000 $d
+0006abc0 l       .bss	00000000 $d
+0006abc0 l     O .bss	0000000c lock.8647
+000143f8 l       .text	00000000 $t
+000143f9 l     F .text	000002d4 read_alias_file
+000146b4 l       .text	00000000 $d
+0004d154 l     O .rodata	0000000e aliasfile.8222
+000146cd l     F .text	00000010 alias_compare
+000146cc l       .text	00000000 $t
+000147dc l       .text	00000000 $d
+000699bc l       .data	00000000 $d
+000699bc l     O .data	00000004 locale_alias_path.8161
+0004c2a0 l       .rodata	00000000 $d
+0006b074 l       __libc_freeres_ptrs	00000000 $d
+0006b074 l     O __libc_freeres_ptrs	00000004 map
+0006b078 l     O __libc_freeres_ptrs	00000004 string_space
+0006abcc l       .bss	00000000 $d
+0006abcc l     O .bss	00000004 nmap
+0006abd0 l     O .bss	00000004 maxmap
+0006abd4 l     O .bss	00000004 string_space_act
+0006abd8 l     O .bss	00000004 string_space_max
+0006abdc l     O .bss	00000004 lock
+000147ec l       .text	00000000 $t
+00014b10 l       .text	00000000 $d
+00014b14 l       .text	00000000 $t
+00014bb4 l       .text	00000000 $d
+0004d164 l       .rodata	00000000 $d
+00014bbc l       .text	00000000 $t
+00014d0c l       .text	00000000 $t
+00014d41 l     F .text	00000078 new_exp
+00014db9 l     F .text	00000018 new_exp_2
+00014ef4 l       .text	00000000 $d
+00014f0c l       .text	00000000 $t
+00015008 l       .text	00000000 $d
+0001500c l       .text	00000000 $t
+0001502c l       .text	00000000 $d
+00015126 l       .text	00000000 $t
+0004d184 l       .rodata	00000000 $d
+0004d184 l     O .rodata	0000001b yypact
+0004d1a0 l     O .rodata	00000107 yytranslate
+0004d2a8 l     O .rodata	00000037 yycheck
+0004d2e0 l     O .rodata	00000037 yytable
+0004d318 l     O .rodata	0000001b yydefact
+0004d334 l     O .rodata	0000000e yyr2
+0004d344 l     O .rodata	0000000e yyr1
+0004d354 l     O .rodata	00000003 yypgoto
+0004d358 l     O .rodata	00000003 yydefgoto
+000152b4 l       .text	00000000 $t
+00015338 l       .text	00000000 $d
+0004d35c l       .rodata	00000000 $d
+0004d370 l     O .rodata	00000014 plvar
+0004d384 l     O .rodata	00000014 plone
+0004d398 l       .rodata	00000000 $d
+00015348 l       .text	00000000 $t
+0001536c l       .text	00000000 $t
+000153a4 l       .text	00000000 $d
+0006abe0 l       .bss	00000000 $d
+000153b0 l       .text	00000000 $a
+000153f8 l       .text	00000000 Lhwcap
+000153d4 l       .text	00000000 Lno_vfp
+000153f4 l       .text	00000000 Lno_iwmmxt
+000153f8 l       .text	00000000 $d
+00015400 l       .text	00000000 $t
+00015424 l       .text	00000000 $t
+0001549c l       .text	00000000 $d
+000154a0 l       .text	00000000 $t
+00015544 l       .text	00000000 $d
+00015550 l       .text	00000000 $t
+00015570 l       .text	00000000 $d
+00015574 l       .text	00000000 $t
+000155d4 l       .text	00000000 $d
+000155e0 l       .text	00000000 $a
+000605d8 l       .ARM.extab	00000000 $d
+00060a90 l       .ARM.exidx	00000000 $d
+00015630 l       .text	00000000 $t
+00060ab0 l       .ARM.exidx	00000000 $d
+00015678 l       .text	00000000 $t
+00015679 l     F .text	000001f6 msort_with_tmp.part.0
+000156c6 l       .text	00000000 $d
+000156ca l       .text	00000000 $t
+00060ab8 l       .ARM.exidx	00000000 $d
+00015a54 l       .text	00000000 $d
+00015a5c l       .text	00000000 $t
+0006abe4 l       .bss	00000000 $d
+0006abe4 l     O .bss	00000004 pagesize.6873
+0006abe8 l     O .bss	00000004 phys_pages.6872
+00015a6c l       .text	00000000 $t
+00015b24 l       .text	00000000 $d
+00015b28 l       .text	00000000 $t
+00015ed0 l       .text	00000000 $d
+00015ee4 l       .text	00000000 $t
+00015f20 l       .text	00000000 $d
+00015f24 l       .text	00000000 $t
+00016004 l       .text	00000000 $d
+00016010 l       .text	00000000 $t
+0001609c l       .text	00000000 $d
+0004a594 l       __libc_freeres_fn	00000000 $t
+0004a595 l     F __libc_freeres_fn	00000022 free_mem
+0006048c l       __libc_subfreeres	00000000 $d
+0006048c l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+0004f290 l       .rodata	00000000 $d
+0006abec l       .bss	00000000 $d
+0006abec l     O .bss	00000004 envlock
+0006abf0 l     O .bss	00000004 last_environ
+0006abf4 l     O .bss	00000004 known_values
+000160a4 l       .text	00000000 $t
+000160b4 l       .text	00000000 $d
+000160b8 l       .text	00000000 $t
+000160d4 l       .text	00000000 $d
+000160d8 l       .text	00000000 $t
+000160f4 l       .text	00000000 $d
+000160f8 l       .text	00000000 $t
+00016114 l       .text	00000000 $d
+00016118 l       .text	00000000 $t
+00016134 l       .text	00000000 $d
+00016138 l       .text	00000000 $t
+0001642c l       .text	00000000 $d
+00016438 l       .text	00000000 $t
+0004d3ac l       .rodata	00000000 $d
+00016448 l       .text	00000000 $t
+00016724 l       .text	00000000 $d
+00016734 l       .text	00000000 $t
+00016744 l       .text	00000000 $t
+000168c0 l       .text	00000000 $t
+00016944 l       .text	00000000 $d
+0001694c l       .text	00000000 $t
+00016b20 l       .text	00000000 $d
+00016b2c l       .text	00000000 $t
+0004d45c l       .rodata	00000000 $d
+0004d718 l       .rodata	00000000 $d
+0004d73c l       .rodata	00000000 $d
+0001c088 l       .text	00000000 $t
+0001c154 l       .text	00000000 $d
+0001c164 l       .text	00000000 $t
+0006b07c l       __libc_freeres_ptrs	00000000 $d
+0006abf8 l       .bss	00000000 $d
+0006abf8 l     O .bss	00000004 lock
+0001c168 l       .text	00000000 $t
+0001c388 l       .text	00000000 $d
+0001c3b8 l       .text	00000000 $t
+0001c7bc l       .text	00000000 $d
+0001c7c0 l       .text	00000000 $t
+0001ce34 l       .text	00000000 $d
+0004dd10 l     O .rodata	0000000f __PRETTY_FUNCTION__.11520
+0001ce4c l       .text	00000000 $t
+0004dc74 l       .rodata	00000000 $d
+0004dc9c l       .rodata	00000000 $d
+0004a5b8 l       __libc_freeres_fn	00000000 $t
+0004a5b9 l     F __libc_freeres_fn	00000038 free_mem
+0004a5ec l       __libc_freeres_fn	00000000 $d
+0001ceb8 l       .text	00000000 $t
+0001cfec l       .text	00000000 $d
+0001d000 l       .text	00000000 $t
+0001d088 l       .text	00000000 $d
+0001d08c l       .text	00000000 $t
+0001d118 l       .text	00000000 $d
+00060490 l       __libc_subfreeres	00000000 $d
+00060490 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+0006abfc l       .bss	00000000 $d
+0006abfc l     O .bss	00000004 next_bit
+0006ac00 l     O .bss	00000004 lock
+0001d11c l       .text	00000000 $t
+0001d1d4 l       .text	00000000 $d
+000699c0 l       .data	00000000 $d
+000699c0 l     O .data	00000004 pa_next_type
+0006b080 l       __libc_freeres_ptrs	00000000 $d
+0006ac04 l       .bss	00000000 $d
+0006ac04 l     O .bss	00000004 lock
+0001d1e4 l       .text	00000000 $t
+00060664 l       .ARM.extab	00000000 $d
+00060af8 l       .ARM.exidx	00000000 $d
+0001d204 l       .text	00000000 $t
+0001d224 l       .text	00000000 $t
+0001d244 l       .text	00000000 $t
+0001d264 l       .text	00000000 $t
+0001d2b0 l       .text	00000000 $t
+0001d332 l       .text	00000000 $d
+0001d35c l       .text	00000000 $t
+0001d40c l       .text	00000000 $d
+0001d46a l       .text	00000000 $t
+0001d4d8 l       .text	00000000 $d
+0001d548 l       .text	00000000 $t
+0001d62c l       .text	00000000 $d
+0001d634 l       .text	00000000 $t
+0001d7f4 l       .text	00000000 $d
+0001d7f8 l       .text	00000000 $t
+0001d888 l       .text	00000000 $d
+0004dd48 l     O .rodata	0000000b __PRETTY_FUNCTION__.10581
+0004dd20 l       .rodata	00000000 $d
+0001d898 l       .text	00000000 $t
+0001da70 l       .text	00000000 $d
+00060670 l       .ARM.extab	00000000 $d
+00060b08 l       .ARM.exidx	00000000 $d
+0001da80 l       .text	00000000 $t
+00060698 l       .ARM.extab	00000000 $d
+00060b10 l       .ARM.exidx	00000000 $d
+0001db90 l       .text	00000000 $t
+0001dbb8 l       .text	00000000 $d
+00060b18 l       .ARM.exidx	00000000 $d
+0001dbc0 l       .text	00000000 $t
+0001dc4c l       .text	00000000 $d
+0001dc5c l       .text	00000000 $t
+0001dc64 l       .text	00000000 $t
+000606bc l       .ARM.extab	00000000 $d
+00060b30 l       .ARM.exidx	00000000 $d
+0001dd88 l       .text	00000000 $t
+0001df00 l       .text	00000000 $d
+000606d4 l       .ARM.extab	00000000 $d
+00060b38 l       .ARM.exidx	00000000 $d
+0001df08 l       .text	00000000 $t
+000606ec l       .ARM.extab	00000000 $d
+00060b40 l       .ARM.exidx	00000000 $d
+0001e05c l       .text	00000000 $t
+0001e0c4 l       .text	00000000 $d
+0004dd54 l       .rodata	00000000 $d
+0004dd54 l     O .rodata	00000010 blanks
+0004dd64 l     O .rodata	00000010 zeroes
+0001e0cc l       .text	00000000 $t
+0001e15c l       .text	00000000 $d
+00060b50 l       .ARM.exidx	00000000 $d
+0001e160 l       .text	00000000 $t
+00060704 l       .ARM.extab	00000000 $d
+0001e270 l       .text	00000000 $t
+0001e2b8 l       .text	00000000 $t
+0001e2b9 l     F .text	00000036 _IO_mem_sync
+0001e2f1 l     F .text	00000042 _IO_mem_finish
+0001e39c l       .text	00000000 $d
+0004dd74 l       .rodata	00000000 $d
+0004dd74 l     O .rodata	00000054 _IO_mem_jumps
+0001e3a8 l       .text	00000000 $t
+0001e470 l       .text	00000000 $d
+0001e47c l       .text	00000000 $t
+0001e530 l       .text	00000000 $d
+0001e538 l       .text	00000000 $t
+0001e5a0 l       .text	00000000 $d
+0001e5a4 l       .text	00000000 $t
+0001e5e0 l       .text	00000000 $t
+0001e644 l       .text	00000000 $d
+0004ddc8 l       .rodata	00000000 $d
+0004ddc8 l     O .rodata	00000040 blanks
+0004de08 l     O .rodata	00000040 zeroes
+0001e64c l       .text	00000000 $t
+0001e64d l     F .text	00000132 save_for_wbackup
+00060b68 l       .ARM.exidx	00000000 $d
+0001edc4 l       .text	00000000 $t
+0001f160 l       .text	00000000 $d
+00060bc8 l       .ARM.exidx	00000000 $d
+0001f164 l       .text	00000000 $t
+0001f440 l       .text	00000000 $d
+0001f450 l       .text	00000000 $t
+0001f57c l       .text	00000000 $d
+0004df6c l     O .rodata	00000014 __PRETTY_FUNCTION__.9349
+0006071c l       .ARM.extab	00000000 $d
+0001f58c l       .text	00000000 $t
+0001f58d l     F .text	0000001a _IO_wfile_underflow_maybe_mmap
+0001f5a9 l     F .text	000000dc _IO_wfile_underflow_mmap
+0001f67c l       .text	00000000 $d
+0001f684 l       .text	00000000 $t
+0001f900 l       .text	00000000 $d
+0001f904 l       .text	00000000 $t
+0001faa4 l       .text	00000000 $d
+0004de48 l       .rodata	00000000 $d
+0004df44 l       .rodata	00000000 $d
+0001faa8 l       .text	00000000 $t
+0001faa9 l     F .text	0000002c _IO_file_seekoff_maybe_mmap
+00060c08 l       .ARM.exidx	00000000 $d
+0001fad5 l     F .text	00000058 _IO_file_sync_mmap
+0001fb35 l     F .text	00000124 decide_maybe_mmap
+0001fc48 l       .text	00000000 $d
+0001fc58 l       .text	00000000 $t
+0001fc59 l     F .text	0000001c _IO_file_xsgetn_maybe_mmap
+0001fcb4 l       .text	00000000 $d
+0001fcb8 l       .text	00000000 $t
+0001fcf4 l       .text	00000000 $d
+0001fcf8 l       .text	00000000 $t
+0001fcf9 l     F .text	00000160 mmap_remap_check
+0001fe50 l       .text	00000000 $d
+0001fe58 l       .text	00000000 $t
+0001fe59 l     F .text	00000098 _IO_file_xsgetn_mmap
+0002000d l     F .text	000000a4 new_do_write
+00020124 l       .text	00000000 $d
+00020128 l       .text	00000000 $t
+0002040c l       .text	00000000 $d
+00020410 l       .text	00000000 $t
+0002045c l       .text	00000000 $d
+00020468 l       .text	00000000 $t
+00020534 l       .text	00000000 $d
+00020538 l       .text	00000000 $t
+000206b8 l       .text	00000000 $d
+000206bc l       .text	00000000 $t
+000207b4 l       .text	00000000 $d
+000207bc l       .text	00000000 $t
+0002082c l       .text	00000000 $d
+00020834 l       .text	00000000 $t
+000208e4 l       .text	00000000 $d
+000208e8 l       .text	00000000 $t
+00020d04 l       .text	00000000 $d
+00020d1c l       .text	00000000 $t
+00020d58 l       .text	00000000 $d
+0004e0c0 l     O .rodata	00000013 __PRETTY_FUNCTION__.10417
+00060744 l       .ARM.extab	00000000 $d
+00020d6c l       .text	00000000 $t
+00020f3c l       .text	00000000 $d
+00020f44 l       .text	00000000 $t
+00021078 l       .text	00000000 $d
+0004df80 l       .rodata	00000000 $d
+0004e07c l       .rodata	00000000 $d
+0002107c l       .text	00000000 $t
+000211f1 l     F .text	0000010c enlarge_userbuf.part.0
+000212f0 l       .text	00000000 $d
+0004e148 l     O .rodata	00000010 __PRETTY_FUNCTION__.9418
+000212fc l       .text	00000000 $t
+0004e0d4 l       .rodata	00000000 $d
+0004e128 l       .rodata	00000000 $d
+000214d0 l       .text	00000000 $t
+000214f0 l       .text	00000000 $t
+00021508 l       .text	00000000 $t
+00021518 l       .text	00000000 $t
+00021538 l       .text	00000000 $t
+00021610 l       .text	00000000 $d
+0004e158 l       .rodata	00000000 $d
+00021620 l       .text	00000000 $t
+000216a0 l       .text	00000000 $t
+00021760 l       .text	00000000 $t
+000217cc l       .text	00000000 $t
+000217f8 l       .text	00000000 $t
+000217f9 l     F .text	000000bc critical_factorization
+000218b5 l     F .text	000001fa two_way_long_needle
+00021cd0 l       .text	00000000 $t
+00021d70 l       .text	00000000 $t
+00021d88 l       .text	00000000 $t
+00021db4 l       .text	00000000 $t
+00021e28 l       .text	00000000 $t
+00021e4c l       .text	00000000 $t
+00021e70 l       .text	00000000 $t
+00021e78 l       .text	00000000 $t
+00021eb4 l       .text	00000000 $t
+00021ebc l       .text	00000000 $t
+00021ec4 l       .text	00000000 $t
+00021ff8 l       .text	00000000 $d
+0004e214 l     O .rodata	0000000a __PRETTY_FUNCTION__.8242
+0004e168 l       .rodata	00000000 $d
+0006ac08 l       .bss	00000000 $d
+0006ac08 l     O .bss	00000008 state
+0002201c l       .text	00000000 $t
+000221c0 l       .text	00000000 $d
+0004e290 l     O .rodata	0000000c __PRETTY_FUNCTION__.8248
+0004e220 l       .rodata	00000000 $d
+0006ac10 l       .bss	00000000 $d
+0006ac10 l     O .bss	00000008 state
+000221ec l       .text	00000000 $t
+00022380 l       .text	00000000 $d
+0004e2b8 l     O .rodata	0000000d __PRETTY_FUNCTION__.8249
+0004e29c l       .rodata	00000000 $d
+0006ac18 l       .bss	00000000 $d
+0006ac18 l     O .bss	00000008 state
+000223a8 l       .text	00000000 $t
+00022410 l       .text	00000000 $t
+0002257c l       .text	00000000 $d
+000225a0 l       .text	00000000 $t
+000225ec l       .text	00000000 $d
+000225f8 l       .text	00000000 $t
+0002263c l       .text	00000000 $d
+0004e2c8 l       .rodata	00000000 $d
+0004e2d8 l     O .rodata	0000003c to_wc
+0004e314 l     O .rodata	0000003c to_mb
+0004e360 l       .rodata	00000000 $d
+00022640 l       .text	00000000 $t
+00022658 l       .text	00000000 $t
+00022680 l       .text	00000000 $a
+00060cf0 l       .ARM.exidx	00000000 $d
+000226a0 l       .text	00000000 $t
+000226a1 l     F .text	00000026 compute_offset
+000226c9 l     F .text	00000218 compute_change
+000228dc l       .text	00000000 $d
+0004a5f0 l       __libc_freeres_fn	00000000 $t
+0004a5f1 l     F __libc_freeres_fn	00000028 free_mem
+0004a614 l       __libc_freeres_fn	00000000 $d
+000228e0 l       .text	00000000 $t
+000228e1 l     F .text	0000004c update_vars
+00022920 l       .text	00000000 $d
+0002292c l       .text	00000000 $t
+00022998 l       .text	00000000 $d
+0002299c l       .text	00000000 $t
+00022b30 l       .text	00000000 $d
+00022b48 l       .text	00000000 $t
+00022e30 l       .text	00000000 $d
+00022e44 l       .text	00000000 $t
+00022e45 l     F .text	000000e8 tzset_internal
+00022f10 l       .text	00000000 $d
+00022f2c l       .text	00000000 $t
+00022fa4 l       .text	00000000 $d
+00022fb0 l       .text	00000000 $t
+00023018 l       .text	00000000 $d
+00023020 l       .text	00000000 $t
+000230a4 l       .text	00000000 $d
+000230b4 l       .text	00000000 $t
+000231d0 l       .text	00000000 $d
+00060494 l       __libc_subfreeres	00000000 $d
+00060494 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000699c4 l       .data	00000000 $d
+0005fd0c l       .rodata	00000000 $d
+0006ac20 l       .bss	00000000 $d
+0006ac20 l     O .bss	00000004 tzstring_list
+0006ac24 l     O .bss	00000004 old_tz
+0006ac28 l     O .bss	00000040 tz_rules
+0006ac70 l     O .bss	00000004 is_initialized.7919
+0006ac74 l     O .bss	00000004 tzset_lock
+000231e8 l       .text	00000000 $t
+0002344c l       .text	00000000 $d
+00023468 l       .text	00000000 $t
+000237e4 l       .text	00000000 $d
+0004ef50 l     O .rodata	00000014 default_tzdir.5395
+00023804 l       .text	00000000 $t
+00023a34 l       .text	00000000 $d
+0004ef64 l     O .rodata	0000000e __PRETTY_FUNCTION__.5559
+00023a48 l       .text	00000000 $t
+00023b80 l       .text	00000000 $d
+00023b9c l       .text	00000000 $t
+00023e64 l       .text	00000000 $d
+0004ef74 l     O .rodata	00000011 __PRETTY_FUNCTION__.5596
+00023e88 l       .text	00000000 $t
+00023fd4 l       .text	00000000 $d
+0004e39c l       .rodata	00000000 $d
+0006b084 l       __libc_freeres_ptrs	00000000 $d
+0006b084 l     O __libc_freeres_ptrs	00000004 transitions
+0006ac78 l       .bss	00000000 $d
+0006ac78 l     O .bss	00000008 tzfile_ino
+0006ac80 l     O .bss	00000008 tzfile_dev
+0006ac88 l     O .bss	00000004 tzfile_mtime
+0006ac8c l     O .bss	00000004 num_transitions
+0006ac90 l     O .bss	00000004 num_types
+0006ac94 l     O .bss	00000004 num_leaps
+0006ac98 l     O .bss	00000004 type_idxs
+0006ac9c l     O .bss	00000004 types
+0006aca0 l     O .bss	00000004 zone_names
+0006aca4 l     O .bss	00000004 leaps
+0006aca8 l     O .bss	00000004 tzspec
+0006acac l     O .bss	00000004 rule_dstoff
+0006acb0 l     O .bss	00000004 rule_stdoff
+00023fe4 l       .text	00000000 $t
+00023fe5 l     F .text	000012dc __strftime_internal
+000240e8 l       .text	00000000 $d
+000241de l       .text	00000000 $t
+00024a34 l       .text	00000000 $d
+00024a44 l       .text	00000000 $t
+000252b8 l       .text	00000000 $d
+000252c0 l       .text	00000000 $t
+0004ef88 l       .rodata	00000000 $d
+000252dc l       .text	00000000 $t
+000252dd l     F .text	00000070 _nl_init_alt_digit
+00025348 l       .text	00000000 $d
+0002534c l       .text	00000000 $t
+000253a0 l       .text	00000000 $d
+000253ac l       .text	00000000 $t
+0002544c l       .text	00000000 $d
+0002545c l       .text	00000000 $t
+00025500 l       .text	00000000 $d
+0002550c l       .text	00000000 $t
+0002550d l     F .text	0000016c _nl_init_era_entries.part.0
+00025668 l       .text	00000000 $d
+00025678 l       .text	00000000 $t
+00025774 l       .text	00000000 $t
+000257a0 l       .text	00000000 $t
+0002584c l       .text	00000000 $d
+00025854 l       .text	00000000 $t
+00025890 l       .text	00000000 $d
+00025894 l       .text	00000000 $t
+000258a0 l       .text	00000000 $t
+000258e4 l       .text	00000000 $d
+000258ec l       .text	00000000 $t
+000259cc l       .text	00000000 $d
+000259e0 l       .text	00000000 $a
+00060d00 l       .ARM.exidx	00000000 $d
+00025a00 l       .text	00000000 $t
+00025bdc l       .text	00000000 $d
+0004f040 l     O .rodata	0000000c __PRETTY_FUNCTION__.10708
+0004efc0 l       .rodata	00000000 $d
+00025c04 l       .text	00000000 $t
+00025c38 l       .text	00000000 $t
+00025c48 l       .text	00000000 $t
+00025c58 l       .text	00000000 $t
+00025c68 l       .text	00000000 $t
+00025c78 l       .text	00000000 $t
+00025ca2 l       .text	00000000 $d
+00025e90 l       .text	00000000 $t
+00026174 l       .text	00000000 $d
+00026184 l       .text	00000000 $t
+00026304 l       .text	00000000 $d
+00060d10 l       .ARM.exidx	00000000 $d
+0004f04c l       .rodata	00000000 $d
+00026308 l       .text	00000000 $t
+00026324 l       .text	00000000 $t
+00026350 l       .text	00000000 $d
+00026360 l       .text	00000000 $d
+00026364 l       .text	00000000 $a
+00060d20 l       .ARM.exidx	00000000 $d
+00060788 l       .ARM.extab	00000000 $d
+000263f0 l       .text	00000000 $t
+00026418 l       .text	00000000 $d
+0002641c l       .text	00000000 $t
+000264b0 l       .text	00000000 $d
+000264bc l       .text	00000000 $t
+000264d0 l       .text	00000000 $d
+0004f088 l       .rodata	00000000 $d
+000264e0 l       .text	00000000 $d
+000264e4 l       .text	00000000 $a
+00060d40 l       .ARM.exidx	00000000 $d
+000607a0 l       .ARM.extab	00000000 $d
+00026570 l       .text	00000000 $d
+00026574 l       .text	00000000 $a
+00060d58 l       .ARM.exidx	00000000 $d
+000607b8 l       .ARM.extab	00000000 $d
+00026600 l       .text	00000000 $d
+00026604 l       .text	00000000 $a
+00060d70 l       .ARM.exidx	00000000 $d
+000607d0 l       .ARM.extab	00000000 $d
+00026690 l       .text	00000000 $a
+00060d88 l       .ARM.exidx	00000000 $d
+000266b0 l       .text	00000000 $t
+000269b0 l       .text	00000000 $d
+000269cc l       .text	00000000 $t
+00026b74 l       .text	00000000 $d
+0004f114 l     O .rodata	00000009 __PRETTY_FUNCTION__.6361
+0004c7b4 l       .rodata	00000000 $d
+00026b98 l       .text	00000000 $t
+00026bc0 l       .text	00000000 $d
+00026bc4 l       .text	00000000 $t
+00026c18 l       .text	00000000 $d
+0006acb8 l       .bss	00000000 $d
+00026c24 l       .text	00000000 $t
+00026c94 l       .text	00000000 $d
+00060d98 l       .ARM.exidx	00000000 $d
+00026ca0 l       .text	00000000 $t
+00026cb8 l       .text	00000000 $d
+0004f160 l     O .rodata	0000000e __PRETTY_FUNCTION__.8234
+0004f120 l       .rodata	00000000 $d
+00026cc8 l       .text	00000000 $t
+00026cf0 l       .text	00000000 $a
+00060da8 l       .ARM.exidx	00000000 $d
+00026d50 l       .text	00000000 $t
+00026d51 l     F .text	0000004a trecurse
+00060db0 l       .ARM.exidx	00000000 $d
+00026d9d l     F .text	00000026 tdestroy_recurse
+00026dc5 l     F .text	000000d2 maybe_split_for_insert.isra.0
+00027214 l       .text	00000000 $t
+00027220 l       .text	00000000 $d
+00027224 l       .text	00000000 $t
+0002725c l       .text	00000000 $d
+00027260 l       .text	00000000 $t
+000272ac l       .text	00000000 $d
+000272b0 l       .text	00000000 $t
+000272ec l       .text	00000000 $t
+0002740c l       .text	00000000 $d
+0004ad3c l       .rodata	00000000 $d
+00027418 l       .text	00000000 $t
+00027438 l       .text	00000000 $d
+0004afc8 l       .rodata	00000000 $d
+00029704 l       .text	00000000 $t
+00029a2c l       .text	00000000 $d
+0004fbc0 l     O .rodata	00000016 __PRETTY_FUNCTION__.8399
+00029a58 l       .text	00000000 $t
+00029b6c l       .text	00000000 $d
+00029b78 l       .text	00000000 $t
+00029b90 l       .text	00000000 $d
+0004fb3c l       .rodata	00000000 $d
+0006acc0 l       .bss	00000000 $d
+0006acc0 l     O .bss	00000004 cache
+0006acc4 l     O .bss	00000004 cachesize
+0006acc8 l     O .bss	00000004 cache_new
+00029b94 l       .text	00000000 $t
+00029b95 l     F .text	00000048 enter.8885
+00060de8 l       .ARM.exidx	00000000 $d
+00029bdd l     F .text	00000114 check_match.8837
+00029ce4 l       .text	00000000 $d
+0004fe64 l     O .rodata	0000000c __PRETTY_FUNCTION__.8840
+00029cf0 l       .text	00000000 $t
+00029cf1 l     F .text	00000434 do_lookup_x
+0002a0a0 l       .text	00000000 $d
+0002a0bc l       .text	00000000 $t
+0002a4b8 l       .text	00000000 $d
+0004fe3c l     O .rodata	00000014 __PRETTY_FUNCTION__.9020
+0004fe50 l     O .rodata	00000013 undefined_msg
+0002a4f4 l       .text	00000000 $t
+0002a754 l       .text	00000000 $d
+0002a788 l       .text	00000000 $t
+0002a898 l       .text	00000000 $d
+0002a8a4 l       .text	00000000 $t
+0002a910 l       .text	00000000 $d
+0004fe70 l     O .rodata	0000000f __PRETTY_FUNCTION__.9070
+0004fbd8 l       .rodata	00000000 $d
+0002a91c l       .text	00000000 $t
+0002a984 l       .text	00000000 $d
+0002a998 l       .text	00000000 $t
+0002ab28 l       .text	00000000 $d
+0002ab34 l       .text	00000000 $t
+0002ab35 l     F .text	0000007c fix_bad_pc24.8540.isra.3
+0002aba0 l       .text	00000000 $d
+0005010c l     O .rodata	0000000d __PRETTY_FUNCTION__.8546
+0002abb0 l       .text	00000000 $t
+0002ac2c l       .text	00000000 $d
+0002ac3c l       .text	00000000 $t
+0002ac5c l       .text	00000000 $d
+0002ac60 l       .text	00000000 $t
+0002acb4 l       .text	00000000 $d
+000500d4 l     O .rodata	0000001d __PRETTY_FUNCTION__.8469
+0002acc0 l       .text	00000000 $t
+0002ad04 l       .text	00000000 $d
+0005011c l     O .rodata	0000003b errstring.8749
+0002ad10 l       .text	00000000 $t
+0002ae68 l       .text	00000000 $d
+0002ae78 l       .text	00000000 $t
+0002b520 l       .text	00000000 $d
+0002b530 l       .text	00000000 $t
+0002ba80 l       .text	00000000 $d
+0002ba88 l       .text	00000000 $t
+0002bdf4 l       .text	00000000 $d
+000500f4 l     O .rodata	00000015 __PRETTY_FUNCTION__.8637
+0002be20 l       .text	00000000 $t
+0002bf28 l       .text	00000000 $d
+0004fe80 l       .rodata	00000000 $d
+0004fe80 l     O .rodata	00000040 msg.8756
+0004fec0 l       .rodata	00000000 $d
+0006accc l       .bss	00000000 $d
+0006accc l     O .bss	00000004 fix_page.8542
+0006acd0 l     O .bss	00000004 fix_offset.8543
+0006acd4 l     O .bss	00000004 pagesize.8544
+0002bf3c l       .text	00000000 $t
+0002c028 l       .text	00000000 $d
+000501d8 l     O .rodata	0000000e _dl_out_of_memory
+0002c04c l       .text	00000000 $t
+0002c0a0 l       .text	00000000 $d
+0002c0b4 l       .text	00000000 $t
+00050158 l       .rodata	00000000 $d
+0006acd8 l       .bss	00000000 $d
+0006acd8 l     O .bss	00000004 receiver
+0002c16c l       .text	00000000 $t
+0002c1b8 l       .text	00000000 $d
+0002c1c8 l       .text	00000000 $t
+0002c1c9 l     F .text	00000284 _dl_debug_vdprintf
+0002c438 l       .text	00000000 $d
+000502b8 l     O .rodata	00000013 __PRETTY_FUNCTION__.8448
+0002c44c l       .text	00000000 $t
+0002c598 l       .text	00000000 $d
+000501e8 l       .rodata	00000000 $d
+000501e8 l     O .rodata	00000078 primes.8525
+00050260 l       .rodata	00000000 $d
+0002c59c l       .text	00000000 $t
+0002c59d l     F .text	00000028 allocate_dtv
+0002c5c0 l       .text	00000000 $d
+0002c5c4 l       .text	00000000 $t
+0002c638 l       .text	00000000 $d
+000503bc l     O .rodata	00000013 __PRETTY_FUNCTION__.8813
+0002c658 l       .text	00000000 $t
+0002c6c4 l       .text	00000000 $d
+0002c6cc l       .text	00000000 $t
+0002c7e0 l       .text	00000000 $d
+000503d0 l     O .rodata	00000016 __PRETTY_FUNCTION__.8846
+0002c7fc l       .text	00000000 $t
+0002c874 l       .text	00000000 $d
+0002c878 l       .text	00000000 $t
+0002c8cc l       .text	00000000 $d
+0002c8d4 l       .text	00000000 $t
+0002c950 l       .text	00000000 $d
+000503e8 l     O .rodata	00000014 __PRETTY_FUNCTION__.8881
+000502cc l       .rodata	00000000 $d
+0002c96c l       .text	00000000 $t
+0002ca44 l       .text	00000000 $d
+00050448 l     O .rodata	0000000f __PRETTY_FUNCTION__.8247
+000503fc l       .rodata	00000000 $d
+0002ca58 l       .text	00000000 $t
+0002cad4 l       .text	00000000 $d
+0002cadc l       .text	00000000 $t
+0002cb20 l       .text	00000000 $d
+0002cb34 l       .text	00000000 $a
+0002cc1c l       .text	00000000 $t
+0002cc44 l       .text	00000000 $d
+0002cc48 l       .text	00000000 $t
+0002cc54 l       .text	00000000 $d
+000699d0 l       .data	00000000 $d
+00000024 l       .tbss	00000000 $d
+00000024 l       .tbss	00000004 data.7285
+0002cc58 l       .text	00000000 $a
+00060e18 l       .ARM.exidx	00000000 $d
+000607e8 l       .ARM.extab	00000000 $d
+0002ccb0 l       .text	00000000 $a
+0002ccc0 l       .text	00000000 $t
+0002cf8c l       .text	00000000 $d
+0002cfa8 l       .text	00000000 $t
+0002d1f8 l       .text	00000000 $d
+00050458 l       .rodata	00000000 $d
+00050458 l     O .rodata	00000004 internal_trans_names.7249
+0004e360 l       .rodata	00000000 $d
+0002d208 l       .text	00000000 $t
+0002d330 l       .text	00000000 $d
+000504bc l     O .rodata	00000008 __PRETTY_FUNCTION__.7687
+00050468 l       .rodata	00000000 $d
+0002d340 l       .text	00000000 $t
+0004a618 l       __libc_freeres_fn	00000000 $t
+0004a619 l     F __libc_freeres_fn	00000038 free_modules_db
+0004a651 l     F __libc_freeres_fn	00000048 free_mem
+0004a684 l       __libc_freeres_fn	00000000 $d
+0004a699 l     F __libc_freeres_fn	00000078 free_derivation
+0004a698 l       __libc_freeres_fn	00000000 $t
+0004a704 l       __libc_freeres_fn	00000000 $d
+00050538 l     O .rodata	00000010 __PRETTY_FUNCTION__.7863
+0002d3a0 l       .text	00000000 $t
+0002d3a9 l     F .text	00000028 do_lookup_alias
+0002d3c8 l       .text	00000000 $d
+0002d3d0 l       .text	00000000 $t
+0002d3d1 l     F .text	0000001e derivation_compare
+0002d444 l       .text	00000000 $d
+00050520 l     O .rodata	00000015 __PRETTY_FUNCTION__.7871
+0002d450 l       .text	00000000 $t
+0002d451 l     F .text	00000608 find_derivation
+0002d6c4 l       .text	00000000 $d
+0002d6cc l       .text	00000000 $t
+0002da50 l       .text	00000000 $d
+0002da58 l       .text	00000000 $t
+0002dab8 l       .text	00000000 $d
+0002dac8 l       .text	00000000 $t
+0002dcc8 l       .text	00000000 $d
+0002dce0 l       .text	00000000 $t
+0002dd7c l       .text	00000000 $d
+00060498 l       __libc_subfreeres	00000000 $d
+00060498 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000504c4 l       .rodata	00000000 $d
+0006acdc l       .bss	00000000 $d
+0006acdc l     O .bss	00000004 known_derivations
+0006ace0 l     O .bss	00000004 once
+0004a710 l       __libc_freeres_fn	00000000 $t
+0004a711 l     F __libc_freeres_fn	0000001c free_mem
+0004a724 l       __libc_freeres_fn	00000000 $d
+0002dd80 l       .text	00000000 $t
+0002dd81 l     F .text	00000090 insert_module
+0002de0c l       .text	00000000 $d
+0002de10 l       .text	00000000 $t
+0002de11 l     F .text	00000238 add_module.isra.0
+0002e034 l       .text	00000000 $d
+00050938 l     O .rodata	00000004 gconv_module_ext
+0002e048 l       .text	00000000 $t
+0002e049 l     F .text	00000070 add_alias2.isra.1
+0002e0ac l       .text	00000000 $d
+0002e0b8 l       .text	00000000 $t
+0002e320 l       .text	00000000 $d
+0005097c l     O .rodata	00000021 default_gconv_path
+000509a0 l     O .rodata	00000011 __PRETTY_FUNCTION__.10553
+0002e34c l       .text	00000000 $t
+0002e60c l       .text	00000000 $d
+000509b4 l     O .rodata	0000000e gconv_conf_filename
+00050548 l       .rodata	00000000 $d
+00050548 l     O .rodata	00000008 empty_path_elem
+00050550 l     O .rodata	000003e7 builtin_aliases
+0006049c l       __libc_subfreeres	00000000 $d
+0006049c l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000699d4 l       .data	00000000 $d
+000699d4 l     O .data	00000180 builtin_modules
+00050938 l       .rodata	00000000 $d
+0006ace4 l       .bss	00000000 $d
+0006ace4 l     O .bss	00000004 lock.10532
+0006ace8 l     O .bss	00000004 modcounter.10512
+0002e638 l       .text	00000000 $t
+0002e6b0 l       .text	00000000 $d
+00050bfc l     O .rodata	0000001a __PRETTY_FUNCTION__.7283
+00050b04 l       .rodata	00000000 $d
+00050b04 l     O .rodata	000000c0 map
+00050bc4 l       .rodata	00000000 $d
+0002e6c0 l       .text	00000000 $t
+0002ea10 l       .text	00000000 $d
+00050d64 l     O .rodata	00000020 __PRETTY_FUNCTION__.8392
+0002ea20 l       .text	00000000 $t
+0002ee10 l       .text	00000000 $d
+00050d84 l     O .rodata	00000020 __PRETTY_FUNCTION__.8507
+0002ee20 l       .text	00000000 $t
+0002f144 l       .text	00000000 $d
+00050da4 l     O .rodata	00000022 __PRETTY_FUNCTION__.8607
+00050dc8 l     O .rodata	0000001f __PRETTY_FUNCTION__.8553
+0002f160 l       .text	00000000 $t
+0002f5a8 l       .text	00000000 $d
+00050e24 l     O .rodata	0000001f __PRETTY_FUNCTION__.8667
+00050de8 l     O .rodata	00000022 __PRETTY_FUNCTION__.8722
+00050e0c l     O .rodata	00000015 __PRETTY_FUNCTION__.8647
+0002f5c8 l       .text	00000000 $t
+0002f7e8 l       .text	00000000 $d
+00050e44 l     O .rodata	00000021 __PRETTY_FUNCTION__.8813
+0002f7f4 l       .text	00000000 $t
+0002fd04 l       .text	00000000 $d
+00050e68 l     O .rodata	00000021 __PRETTY_FUNCTION__.8941
+00050e8c l     O .rodata	0000001b __PRETTY_FUNCTION__.8898
+0002fd2c l       .text	00000000 $t
+000302f4 l       .text	00000000 $d
+00050ea8 l     O .rodata	00000020 __PRETTY_FUNCTION__.9085
+00050ec8 l     O .rodata	0000001a __PRETTY_FUNCTION__.9042
+00030318 l       .text	00000000 $t
+00030490 l       .text	00000000 $d
+000304a4 l       .text	00000000 $t
+00030ae0 l       .text	00000000 $d
+00050f04 l     O .rodata	0000001a __PRETTY_FUNCTION__.9197
+00050ee4 l     O .rodata	00000020 __PRETTY_FUNCTION__.9243
+00030afc l       .text	00000000 $t
+00030d5c l       .text	00000000 $d
+00030d7c l       .text	00000000 $t
+00031204 l       .text	00000000 $d
+00050f20 l     O .rodata	00000020 __PRETTY_FUNCTION__.9402
+00050f40 l     O .rodata	0000001a __PRETTY_FUNCTION__.9359
+00031220 l       .text	00000000 $t
+000318bc l       .text	00000000 $d
+00050f5c l     O .rodata	00000020 __PRETTY_FUNCTION__.9572
+00050f7c l     O .rodata	0000001a __PRETTY_FUNCTION__.9529
+000318e4 l       .text	00000000 $t
+00031914 l       .text	00000000 $d
+00031920 l       .text	00000000 $t
+00031d68 l       .text	00000000 $d
+00050f98 l     O .rodata	00000027 __PRETTY_FUNCTION__.9734
+00050fc0 l     O .rodata	00000021 __PRETTY_FUNCTION__.9691
+00031d84 l       .text	00000000 $t
+00032430 l       .text	00000000 $d
+00050fe4 l     O .rodata	00000027 __PRETTY_FUNCTION__.9910
+0005100c l     O .rodata	00000021 __PRETTY_FUNCTION__.9867
+00032458 l       .text	00000000 $t
+00032488 l       .text	00000000 $d
+00050c18 l       .rodata	00000000 $d
+00050c18 l     O .rodata	00000005 inmask.9166
+00050c20 l       .rodata	00000000 $d
+00032494 l       .text	00000000 $t
+00032495 l     F .text	00000084 open_translit
+00032508 l       .text	00000000 $d
+00032518 l       .text	00000000 $t
+00032519 l     F .text	00000008 trans_compare
+00032784 l       .text	00000000 $d
+0003278c l       .text	00000000 $t
+00032948 l       .text	00000000 $d
+000510a0 l     O .rodata	00000016 __PRETTY_FUNCTION__.7862
+00051030 l       .rodata	00000000 $d
+0006acec l       .bss	00000000 $d
+0006acec l     O .bss	00000004 lock
+0006acf0 l     O .bss	00000004 search_tree
+0003296c l       .text	00000000 $t
+0003296d l     F .text	00000080 find_module_idx
+000329e8 l       .text	00000000 $d
+000329ec l       .text	00000000 $t
+000329ed l     F .text	0000006e find_module
+0004a72c l       __libc_freeres_fn	00000000 $t
+0004a72d l     F __libc_freeres_fn	0000001c free_mem
+0004a744 l       __libc_freeres_fn	00000000 $d
+00032b94 l       .text	00000000 $d
+00032ba8 l       .text	00000000 $t
+00032bf0 l       .text	00000000 $d
+00032bf4 l       .text	00000000 $t
+00032e80 l       .text	00000000 $d
+00032e88 l       .text	00000000 $t
+00032eb8 l       .text	00000000 $d
+000604a0 l       __libc_subfreeres	00000000 $d
+000604a0 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000510b8 l       .rodata	00000000 $d
+0006acf4 l       .bss	00000000 $d
+0006acf4 l     O .bss	00000004 gconv_cache
+0006acf8 l     O .bss	00000004 cache_size
+0006acfc l     O .bss	00000004 cache_malloced
+0004a748 l       __libc_freeres_fn	00000000 $t
+0004a749 l     F __libc_freeres_fn	0000001e free_mem
+0004a769 l     F __libc_freeres_fn	00000016 do_release_all
+00032ebc l       .text	00000000 $t
+00032ebd l     F .text	00000008 known_compare
+00032ec5 l     F .text	0000005c do_release_shlib
+00032f10 l       .text	00000000 $d
+00051170 l     O .rodata	00000011 __PRETTY_FUNCTION__.7874
+00032f20 l       .text	00000000 $t
+00033018 l       .text	00000000 $d
+0005115c l     O .rodata	00000013 __PRETTY_FUNCTION__.7866
+000604a4 l       __libc_subfreeres	00000000 $d
+000604a4 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+000510fc l       .rodata	00000000 $d
+0006ad00 l       .bss	00000000 $d
+0006ad00 l     O .bss	00000004 loaded
+0006ad04 l     O .bss	00000004 release_handle
+00051184 l       .rodata	00000000 $d
+00033038 l       .text	00000000 $t
+00033039 l     F .text	0000002c setname
+0003305c l       .text	00000000 $d
+0004a780 l       __libc_freeres_fn	00000000 $t
+0004a781 l     F __libc_freeres_fn	0000006c free_category
+0004a7dc l       __libc_freeres_fn	00000000 $d
+00033064 l       .text	00000000 $t
+00033065 l     F .text	00000148 new_composite_name
+00033194 l       .text	00000000 $d
+000331ac l       .text	00000000 $t
+0003344c l       .text	00000000 $d
+00033470 l       .text	00000000 $t
+000335a8 l       .text	00000000 $d
+0004a7ec l       __libc_freeres_fn	00000000 $t
+0004a938 l       __libc_freeres_fn	00000000 $d
+00051230 l       .rodata	00000000 $d
+00051230 l     O .rodata	00000034 _nl_current_used
+00051264 l     O .rodata	00000034 _nl_category_postload
+00051298 l       .rodata	00000000 $d
+0006ad08 l       .bss	00000000 $d
+0003394c l       .text	00000000 $t
+000339de l       .text	00000000 $d
+000339ea l       .text	00000000 $t
+00033b30 l       .text	00000000 $d
+00051c74 l     O .rodata	00000017 __PRETTY_FUNCTION__.7724
+00033b78 l       .text	00000000 $t
+00033d80 l       .text	00000000 $d
+00033da8 l       .text	00000000 $t
+00051368 l       .rodata	00000000 $d
+00051368 l     O .rodata	00000034 _nl_category_num_items
+0005139c l     O .rodata	00000034 _nl_value_types
+000513d0 l     O .rodata	0000011c _nl_value_type_LC_CTYPE
+000514ec l     O .rodata	00000018 _nl_value_type_LC_NUMERIC
+00051504 l     O .rodata	000001bc _nl_value_type_LC_TIME
+000516c0 l     O .rodata	0000004c _nl_value_type_LC_COLLATE
+0005170c l     O .rodata	000000b8 _nl_value_type_LC_MONETARY
+000517c4 l     O .rodata	00000014 _nl_value_type_LC_MESSAGES
+000517d8 l     O .rodata	0000000c _nl_value_type_LC_PAPER
+000517e4 l     O .rodata	0000001c _nl_value_type_LC_NAME
+00051800 l     O .rodata	00000034 _nl_value_type_LC_ADDRESS
+00051834 l     O .rodata	00000014 _nl_value_type_LC_TELEPHONE
+00051848 l     O .rodata	00000008 _nl_value_type_LC_MEASUREMENT
+00051850 l     O .rodata	00000040 _nl_value_type_LC_IDENTIFICATION
+00051890 l       .rodata	00000000 $d
+00033de4 l       .text	00000000 $t
+00033de5 l     F .text	00000008 rangecmp
+00033fb4 l       .text	00000000 $d
+00033fbc l       .text	00000000 $t
+00034298 l       .text	00000000 $d
+00051d04 l     O .rodata	0000001f archfname
+0003429c l       .text	00000000 $t
+00034458 l       .text	00000000 $d
+00051d24 l     O .rodata	0000001d __PRETTY_FUNCTION__.7857
+0004a9cc l       __libc_freeres_fn	00000000 $t
+0004aa60 l       __libc_freeres_fn	00000000 $d
+00051d44 l     O .rodata	00000017 __PRETTY_FUNCTION__.7915
+00051c8c l       .rodata	00000000 $d
+0006ad28 l       .bss	00000000 $d
+0006ad28 l     O .bss	00000004 archloaded
+0006ad2c l     O .bss	00000004 archmapped
+0006ad30 l     O .bss	00000010 headmap
+0006ad40 l     O .bss	00000068 archive_stat
+00051d5c l       .rodata	00000000 $d
+00053750 l     O .rodata	0000152c translit_from_idx
+00054c7c l     O .rodata	00002a58 translit_from_tbl
+000576d4 l     O .rodata	0000152c translit_to_idx
+00058c00 l     O .rodata	00004b14 translit_to_tbl
+0004f0ec l       .rodata	00000000 $d
+0005d728 l       .rodata	00000000 $d
+0005d778 l       .rodata	00000000 $d
+0005d958 l       .rodata	00000000 $d
+0005da94 l       .rodata	00000000 $d
+0005df34 l       .rodata	00000000 $d
+0005df3c l       .rodata	00000000 $d
+00069b54 l       .data	00000000 $d
+00000000 l       .tdata	00000000 $d
+00034478 l       .text	00000000 $t
+000344c4 l       .text	00000000 $d
+00000004 l       .tdata	00000000 $d
+00000008 l       .tdata	00000000 $d
+0000000c l       .tdata	00000000 $d
+000344d8 l       .text	00000000 $t
+000344ec l       .text	00000000 $d
+000344f0 l       .text	00000000 $t
+0003450c l       .text	00000000 $t
+00034524 l       .text	00000000 $t
+00034530 l       .text	00000000 $a
+00034580 l       .text	00000000 Lhwcap
+0003455c l       .text	00000000 Lno_vfp
+0003457c l       .text	00000000 Lno_iwmmxt
+00034580 l       .text	00000000 $d
+00034590 l       .text	00000000 $t
+000345d8 l       .text	00000000 $t
+00034b48 l       .text	00000000 $t
+00034b9c l       .text	00000000 $t
+00034be4 l       .text	00000000 $t
+00034e44 l       .text	00000000 $t
+00034eb0 l       .text	00000000 $t
+00035440 l       .text	00000000 $t
+00035490 l       .text	00000000 $t
+00035508 l       .text	00000000 $t
+000355b4 l       .text	00000000 $t
+00060e40 l       .ARM.exidx	00000000 $d
+0005df50 l       .rodata	00000000 $d
+0003583c l       .text	00000000 $t
+000359f4 l       .text	00000000 $d
+00035a00 l       .text	00000000 $t
+0005e110 l       .rodata	00000000 $d
+00035e70 l       .text	00000000 $t
+000360ae l       .text	00000000 $d
+00036120 l       .text	00000000 $t
+000361c4 l       .text	00000000 $d
+0003626c l       .text	00000000 $t
+000363c8 l       .text	00000000 $d
+000363e0 l       .text	00000000 $t
+00036cc0 l       .text	00000000 $d
+00036ccc l       .text	00000000 $t
+000370f8 l       .text	00000000 $d
+00037100 l       .text	00000000 $t
+000374b4 l       .text	00000000 $d
+000374c4 l       .text	00000000 $t
+00037884 l       .text	00000000 $d
+00037890 l       .text	00000000 $t
+00037fe0 l       .text	00000000 $d
+0005e2ac l     O .rodata	00000015 __PRETTY_FUNCTION__.10803
+00038000 l       .text	00000000 $t
+000382c4 l       .text	00000000 $d
+000382d8 l       .text	00000000 $t
+00038684 l       .text	00000000 $d
+00038698 l       .text	00000000 $t
+00038d34 l       .text	00000000 $d
+00038d44 l       .text	00000000 $t
+00039428 l       .text	00000000 $d
+00039440 l       .text	00000000 $t
+00039758 l       .text	00000000 $d
+00039768 l       .text	00000000 $t
+00039aac l       .text	00000000 $d
+00039ab4 l       .text	00000000 $t
+00039eac l       .text	00000000 $d
+00039ebc l       .text	00000000 $t
+0003a35c l       .text	00000000 $d
+0003a36c l       .text	00000000 $t
+0003a89c l       .text	00000000 $d
+0003a8ac l       .text	00000000 $t
+0003acb8 l       .text	00000000 $d
+0003acd0 l       .text	00000000 $t
+00060800 l       .ARM.extab	00000000 $d
+00060e50 l       .ARM.exidx	00000000 $d
+0005e230 l       .rodata	00000000 $d
+0005e700 l       .rodata	00000000 $d
+0005f3cc l       .rodata	00000000 $d
+0005f5e8 l       .rodata	00000000 $d
+0003ea3c l       .text	00000000 $t
+0003eac0 l       .text	00000000 $d
+0003eaea l       .text	00000000 $t
+0003ebd8 l       .text	00000000 $d
+0003ec36 l       .text	00000000 $t
+0003ec7a l       .text	00000000 $d
+0003ecea l       .text	00000000 $t
+0003edf0 l       .text	00000000 $d
+0003edf8 l       .text	00000000 $t
+0003ef80 l       .text	00000000 $d
+0003ef84 l       .text	00000000 $t
+0003f02c l       .text	00000000 $d
+0003f030 l       .text	00000000 $t
+0003f240 l       .text	00000000 $d
+00060818 l       .ARM.extab	00000000 $d
+00060e78 l       .ARM.exidx	00000000 $d
+0003f248 l       .text	00000000 $t
+00060e80 l       .ARM.exidx	00000000 $d
+0003f338 l       .text	00000000 $t
+0003f339 l     F .text	0000001a do_encoding
+0003f355 l     F .text	00000004 do_always_noconv
+0003f359 l     F .text	00000006 do_max_length
+0003f361 l     F .text	00000060 do_in
+0003f3bc l       .text	00000000 $d
+0003f3c0 l       .text	00000000 $t
+0003f3c1 l     F .text	0000004c do_unshift
+0003f408 l       .text	00000000 $d
+0003f40c l       .text	00000000 $t
+0003f40d l     F .text	00000060 do_out
+0003f468 l       .text	00000000 $d
+0003f46c l       .text	00000000 $t
+0003f46d l     F .text	00000062 do_length
+0003f5fc l       .text	00000000 $d
+0005f6e4 l     O .rodata	0000000a __PRETTY_FUNCTION__.10775
+0005f5ec l       .rodata	00000000 $d
+0005f5ec l     O .rodata	00000020 CSWTCH.11
+0005f60c l     O .rodata	00000020 CSWTCH.13
+0005f62c l     O .rodata	00000020 CSWTCH.15
+0004e084 l       .rodata	00000000 $d
+0003f62c l       .text	00000000 $t
+0003f650 l       .text	00000000 $d
+0003f654 l       .text	00000000 $t
+00060838 l       .ARM.extab	00000000 $d
+00060e98 l       .ARM.exidx	00000000 $d
+0003f76c l       .text	00000000 $t
+0003f8e4 l       .text	00000000 $d
+00060850 l       .ARM.extab	00000000 $d
+00060ea0 l       .ARM.exidx	00000000 $d
+0003f8ec l       .text	00000000 $t
+0003f918 l       .text	00000000 $t
+0003f974 l       .text	00000000 $t
+0003f998 l       .text	00000000 $t
+0003f9dc l       .text	00000000 $t
+0003fa5c l       .text	00000000 $t
+0003fad4 l       .text	00000000 $t
+0003fae8 l       .text	00000000 $t
+0003fb34 l       .text	00000000 $t
+0003fbf4 l       .text	00000000 $d
+0003fc00 l       .text	00000000 $t
+0006ada8 l       .bss	00000000 $d
+0006ada8 l     O .bss	00000008 internal
+0003fc20 l       .text	00000000 $t
+0003fd28 l       .text	00000000 $d
+0005f6fc l     O .rodata	0000000a __PRETTY_FUNCTION__.8245
+0005fd0c l       .rodata	00000000 $d
+0006adb0 l       .bss	00000000 $d
+0006adb0 l     O .bss	00000008 state
+0003fd50 l       .text	00000000 $t
+0003fd78 l       .text	00000000 $d
+0006adb8 l       .bss	00000000 $d
+0006adb8 l     O .bss	00000008 state
+0003fd7c l       .text	00000000 $t
+0003fd98 l       .text	00000000 $t
+0003ffc0 l       .text	00000000 $d
+0005f744 l     O .rodata	0000000e __PRETTY_FUNCTION__.8248
+0005f708 l       .rodata	00000000 $d
+0003ffe4 l       .text	00000000 $t
+0004027c l       .text	00000000 $d
+00040284 l       .text	00000000 $t
+00040285 l     F .text	00000072 ranged_convert
+000402f9 l     F .text	00000118 guess_time_tm.isra.0
+00040730 l       .text	00000000 $d
+00040734 l       .text	00000000 $t
+0005f754 l       .rodata	00000000 $d
+0006adc0 l       .bss	00000000 $d
+0006adc0 l     O .bss	00000004 localtime_offset
+0004078c l       .text	00000000 $t
+00040864 l       .text	00000000 $d
+00040870 l       .text	00000000 $t
+000408f0 l       .text	00000000 $t
+00040950 l       .text	00000000 $d
+00040954 l       .text	00000000 $t
+0004097c l       .text	00000000 $d
+00040980 l       .text	00000000 $t
+000409ec l       .text	00000000 $d
+000409f4 l       .text	00000000 $t
+00040a20 l       .text	00000000 $d
+00040a24 l       .text	00000000 $t
+00040a74 l       .text	00000000 $d
+00040a7c l       .text	00000000 $t
+00040aa8 l       .text	00000000 $d
+00040aac l       .text	00000000 $t
+00040b48 l       .text	00000000 $d
+00040b54 l       .text	00000000 $t
+00040b68 l       .text	00000000 $d
+0005f788 l       .rodata	00000000 $d
+00040b70 l       .text	00000000 $a
+00060eb0 l       .ARM.exidx	00000000 $d
+00040b90 l       .text	00000000 $t
+00040ba8 l       .text	00000000 $t
+00040c4c l       .text	00000000 $d
+00040c50 l       .text	00000000 $t
+00040d68 l       .text	00000000 $d
+0005f7e4 l     O .rodata	0000000a __PRETTY_FUNCTION__.9560
+00060ec0 l       .ARM.exidx	00000000 $d
+00040d78 l       .text	00000000 $t
+00040ed8 l       .text	00000000 $d
+0005f7f0 l     O .rodata	00000012 __PRETTY_FUNCTION__.9611
+00040ee8 l       .text	00000000 $t
+0005f7b4 l       .rodata	00000000 $d
+00040eec l       .text	00000000 $t
+000411dc l       .text	00000000 $d
+00041210 l       .text	00000000 $t
+000413e8 l       .text	00000000 $d
+000413fc l       .text	00000000 $t
+00041670 l       .text	00000000 $d
+0005f804 l       .rodata	00000000 $d
+0006adc4 l       .bss	00000000 $d
+0006adc4 l     O .bss	00000004 running
+0006adc8 l     O .bss	00000004 lowpc
+0006adcc l     O .bss	00000004 textsize
+0006add0 l     O .bss	00000004 log_hashfraction
+0006add4 l     O .bss	00000004 fromlimit
+0006add8 l     O .bss	00000004 narcsp
+0006addc l     O .bss	00000004 data
+0006ade0 l     O .bss	00000004 tos
+0006ade4 l     O .bss	00000004 froms
+0006ade8 l     O .bss	00000004 fromidx
+0006adec l     O .bss	00000004 narcs
+0004aa70 l       __libc_freeres_fn	00000000 $t
+0004aa71 l     F __libc_freeres_fn	00000042 free_slotinfo
+0004aab5 l     F __libc_freeres_fn	000000d8 free_mem
+0004ab70 l       __libc_freeres_fn	00000000 $d
+0004167c l       .text	00000000 $t
+0004167d l     F .text	00000038 dlerror_run
+000416f1 l     F .text	00000004 do_dlclose
+000416ec l       .text	00000000 $d
+000416f5 l     F .text	0000002a do_dlsym
+000416f0 l       .text	00000000 $t
+00041721 l     F .text	00000044 do_dlsym_private
+00041765 l     F .text	0000003c do_dlopen
+000417c8 l       .text	00000000 $d
+000417cc l       .text	00000000 $t
+000417dc l       .text	00000000 $d
+000417e4 l       .text	00000000 $t
+00041810 l       .text	00000000 $d
+000604a8 l       __libc_subfreeres	00000000 $d
+000604a8 l     O __libc_subfreeres	00000004 __elf_set___libc_subfreeres_element_free_mem__
+00069bc8 l       .data	00000000 $d
+00069bc8 l     O .data	0000000c _dl_open_hook
+0005f8e8 l       .rodata	00000000 $d
+00041814 l       .text	00000000 $t
+000418e8 l       .text	00000000 $d
+00041900 l       .text	00000000 $t
+00041924 l       .text	00000000 $d
+00041930 l       .text	00000000 $t
+00041940 l       .text	00000000 $t
+00041990 l       .text	00000000 $t
+00041a04 l       .text	00000000 $t
+00041a20 l       .text	00000000 $d
+00041a24 l       .text	00000000 $t
+00041a40 l       .text	00000000 $d
+00041a44 l       .text	00000000 $t
+00041a60 l       .text	00000000 $d
+00041a64 l       .text	00000000 $t
+00041a80 l       .text	00000000 $d
+00041a84 l       .text	00000000 $t
+00041d88 l       .text	00000000 $d
+00041d98 l       .text	00000000 $t
+0005f908 l       .rodata	00000000 $d
+00041f3c l       .text	00000000 $t
+00042268 l       .text	00000000 $d
+00042278 l       .text	00000000 $t
+000423bc l       .text	00000000 $d
+000423c0 l       .text	00000000 $t
+000423d0 l       .text	00000000 $t
+000423e4 l       .text	00000000 $d
+000423e8 l       .text	00000000 $t
+00042400 l       .text	00000000 $d
+00042404 l       .text	00000000 $t
+00042418 l       .text	00000000 $d
+0004241c l       .text	00000000 $t
+00042434 l       .text	00000000 $d
+00042438 l       .text	00000000 $t
+0004244c l       .text	00000000 $d
+00042450 l       .text	00000000 $t
+00042468 l       .text	00000000 $d
+0004246c l       .text	00000000 $t
+0004246d l     F .text	00000124 round_and_return
+0004257c l       .text	00000000 $d
+00042590 l       .text	00000000 $t
+00042591 l     F .text	00000190 str_to_mpn.isra.0
+0004271c l       .text	00000000 $d
+00042720 l       .text	00000000 $t
+00042b00 l       .text	00000000 $d
+00042b0c l       .text	00000000 $t
+00042e5c l       .text	00000000 $d
+00042e60 l       .text	00000000 $t
+000433f4 l       .text	00000000 $d
+0004340c l       .text	00000000 $t
+00043bac l       .text	00000000 $d
+00043bcc l       .text	00000000 $t
+0005fa48 l       .rodata	00000000 $d
+0005fa48 l     O .rodata	00000040 nbits.9015
+0004dc70 l       .rodata	00000000 $d
+00043bd8 l       .text	00000000 $t
+00043bd9 l     F .text	000001c0 round_and_return
+00043d78 l       .text	00000000 $d
+00043d98 l       .text	00000000 $t
+00043d99 l     F .text	00000190 str_to_mpn.isra.0
+00043f24 l       .text	00000000 $d
+00043f28 l       .text	00000000 $t
+000442f8 l       .text	00000000 $d
+0004430c l       .text	00000000 $t
+00044824 l       .text	00000000 $d
+00044828 l       .text	00000000 $t
+00044c28 l       .text	00000000 $d
+00044c48 l       .text	00000000 $t
+00045438 l       .text	00000000 $d
+00045468 l       .text	00000000 $t
+0005fa90 l       .rodata	00000000 $d
+0005fa90 l     O .rodata	00000040 nbits.9004
+0004dc70 l       .rodata	00000000 $d
+00045470 l       .text	00000000 $t
+0005fad0 l       .rodata	00000000 $d
+0004571c l       .text	00000000 $t
+00045724 l       .text	00000000 $t
+0004574c l       .text	00000000 $t
+0004574d l     F .text	00000088 dlinfo_doit
+0004575e l       .text	00000000 $d
+00045768 l       .text	00000000 $t
+000457d0 l       .text	00000000 $d
+000457d4 l       .text	00000000 $t
+000457f8 l       .text	00000000 $d
+0005fb18 l       .rodata	00000000 $d
+000457fc l       .text	00000000 $t
+000457fd l     F .text	00000058 dlmopen_doit
+00045840 l       .text	00000000 $d
+00045854 l       .text	00000000 $t
+00045880 l       .text	00000000 $d
+0005fd0c l       .rodata	00000000 $d
+00045884 l       .text	00000000 $t
+000458dc l       .text	00000000 $d
+0005fb48 l       .rodata	00000000 $d
+0006b088 l       __libc_freeres_ptrs	00000000 $d
+0006b088 l     O __libc_freeres_ptrs	00000004 buf
+000458f0 l       .text	00000000 $t
+00045918 l       .text	00000000 $t
+00045948 l       .text	00000000 $t
+00045949 l     F .text	00000038 profil_counter
+0004597c l       .text	00000000 $d
+00045980 l       .text	00000000 $t
+00045a68 l       .text	00000000 $d
+0006ae10 l       .bss	00000000 $d
+0006ae10 l     O .bss	00000004 pc_offset
+0006ae14 l     O .bss	00000004 pc_scale
+0006ae18 l     O .bss	00000004 nsamples
+0006ae1c l     O .bss	00000004 samples
+0006ae20 l     O .bss	00000010 otimer.6778
+0006ae30 l     O .bss	0000008c oact.6777
+00045a78 l       .text	00000000 $t
+00045a84 l       .text	00000000 $t
+00045a85 l     F .text	00000150 add_to_global
+00045bc0 l       .text	00000000 $d
+00045bd4 l       .text	00000000 $t
+00045d84 l       .text	00000000 $d
+00045e71 l     F .text	00000678 dl_open_worker
+0005fdac l     O .rodata	00000009 __PRETTY_FUNCTION__.9739
+00045db8 l       .text	00000000 $t
+00045e58 l       .text	00000000 $d
+00045e70 l       .text	00000000 $t
+0004613c l       .text	00000000 $d
+00046150 l       .text	00000000 $t
+00046484 l       .text	00000000 $d
+0005fdb8 l     O .rodata	0000000f __PRETTY_FUNCTION__.9658
+000464b0 l       .text	00000000 $t
+000464d4 l       .text	00000000 $d
+0005fb58 l       .rodata	00000000 $d
+000464e8 l       .text	00000000 $t
+000464e9 l     F .text	000000bc remove_slotinfo
+00046588 l       .text	00000000 $d
+00060008 l     O .rodata	00000010 __PRETTY_FUNCTION__.9619
+000465a4 l       .text	00000000 $t
+0004685c l       .text	00000000 $d
+0005fff4 l     O .rodata	00000011 __PRETTY_FUNCTION__.9645
+00046870 l       .text	00000000 $t
+00046c7c l       .text	00000000 $d
+00046c9c l       .text	00000000 $t
+00046e60 l       .text	00000000 $d
+00046e90 l       .text	00000000 $t
+00046ee8 l       .text	00000000 $d
+00060018 l     O .rodata	0000000a __PRETTY_FUNCTION__.9730
+0005fdc8 l       .rodata	00000000 $d
+0006aebc l       .bss	00000000 $d
+0006aebc l     O .bss	00000004 dl_close_state.9631
+00046f04 l       .text	00000000 $t
+00046f18 l       .text	00000000 $t
+00046f38 l       .text	00000000 $t
+00046f39 l     F .text	00000070 dlopen_doit
+00046f90 l       .text	00000000 $d
+00046fa8 l       .text	00000000 $t
+00046fd4 l       .text	00000000 $d
+0005fd0c l       .rodata	00000000 $d
+00046fd8 l       .text	00000000 $t
+00046fd9 l     F .text	00000004 dlclose_doit
+00046ff4 l       .text	00000000 $d
+00046ff8 l       .text	00000000 $t
+00046ff9 l     F .text	0000000e dlsym_doit
+0004703c l       .text	00000000 $d
+0004704c l       .text	00000000 $t
+0004704d l     F .text	0000000e dlvsym_doit
+00047094 l       .text	00000000 $d
+000470b0 l       .text	00000000 $a
+00060ee0 l       .ARM.exidx	00000000 $d
+000470d0 l       .text	00000000 $t
+000470d1 l     F .text	0000004e _dl_build_local_scope
+00047121 l     F .text	00000030 openaux
+000473cc l       .text	00000000 $d
+000473d4 l       .text	00000000 $t
+000476b4 l       .text	00000000 $d
+000476c0 l       .text	00000000 $t
+00047940 l       .text	00000000 $d
+00060218 l     O .rodata	00000014 __PRETTY_FUNCTION__.8450
+00047964 l       .text	00000000 $t
+00047c94 l       .text	00000000 $d
+00047cd4 l       .text	00000000 $t
+00047d38 l       .text	00000000 $d
+0006003c l       .rodata	00000000 $d
+00047d4c l       .text	00000000 $t
+00047d4d l     F .text	000000ac call_init
+00047dec l       .text	00000000 $d
+00047df8 l       .text	00000000 $t
+00047e94 l       .text	00000000 $d
+0006022c l       .rodata	00000000 $d
+00047ea4 l       .text	00000000 $t
+0004822c l       .text	00000000 $d
+000602b4 l     O .rodata	00000009 __PRETTY_FUNCTION__.7358
+00060258 l       .rodata	00000000 $d
+00048254 l       .text	00000000 $t
+00048255 l     F .text	00000254 match_symbol
+00048470 l       .text	00000000 $d
+00060440 l     O .rodata	0000000d __PRETTY_FUNCTION__.7519
+000484a8 l       .text	00000000 $t
+00048728 l       .text	00000000 $d
+00060428 l     O .rodata	00000017 __PRETTY_FUNCTION__.7598
+00048744 l       .text	00000000 $t
+000602c0 l       .rodata	00000000 $d
+00048788 l       .text	00000000 $t
+00048789 l     F .text	00000028 call_dl_lookup
+000487b1 l     F .text	0000023c do_sym
+000489e0 l       .text	00000000 $d
+000489ec l       .text	00000000 $t
+00060450 l       .rodata	00000000 $d
+00048a60 l       .text	00000000 .udivsi3_skip_div0_test
+00048a60 l       .text	00000000 $t
+00000000 l       *ABS*	00000000 shift
+00048cd8 l       .text	00000000 $t
+00048cde l       .text	00000000 .divsi3_skip_div0_test
+00000000 l       *ABS*	00000000 shift
+00048f88 l       .text	00000000 $t
+00048f94 l       .text	00000000 $t
+00048f95 l     F .text	00000290 __gnu_unwind_pr_common
+0004921c l       .text	00000000 $d
+00060ef0 l       .ARM.exidx	00000000 $d
+00049224 l       .text	00000000 $t
+0004923d l     F .text	00000178 get_eit_entry
+00049398 l       .text	00000000 $d
+000493b4 l       .text	00000000 $t
+000493b5 l     F .text	00000058 restore_non_core_regs
+0004940d l     F .text	000000ce unwind_phase2_forced
+00060868 l       .ARM.extab	00000000 $d
+000494dd l     F .text	00000030 unwind_phase2
+00049578 l       .text	00000000 $d
+0004957e l       .text	00000000 $t
+0004957d l       .text	00000000 $d
+00049930 l       .text	00000000 $t
+00049adc l       .text	00000000 $t
+00060f70 l       .ARM.exidx	00000000 $d
+00049fe8 l       .text	00000000 $t
+00049fe9 l     F .text	000000bc read_encoded_value_with_base
+00049ffa l       .text	00000000 $d
+0004a008 l       .text	00000000 $t
+00060f90 l       .ARM.exidx	00000000 $d
+0004a007 l       .text	00000000 $d
+00000000 l    df *ABS*	00000000 crtstuff.c
+00060fa8 l       .eh_frame	00000000 $d
+00060fa8 l     O .eh_frame	00000000 __FRAME_END__
+00068fcc l       .jcr	00000000 $d
+00068fcc l     O .jcr	00000000 __JCR_END__
+00000000 l       .tdata	00000000 _TLS_MODULE_BASE_
+00060fa8 l       *ABS*	00000000 __exidx_end
+00068fcc l       .fini_array	00000000 __fini_array_end
+00060880 l       *ABS*	00000000 __exidx_start
+00068fc4 l       .fini_array	00000000 __fini_array_start
+00068fc4 l       .init_array	00000000 __init_array_end
+00068fc0 l       .tbss	00000000 __preinit_array_end
+00069000 l     O .got	00000000 _GLOBAL_OFFSET_TABLE_
+00068fc0 l       .init_array	00000000 __init_array_start
+00068fc0 l       .tbss	00000000 __preinit_array_start
+0004a359 l     F .text	00000008 __memmove_from_thumb
+0004a358 l       .text	00000000 $t
+0004a35c l       .text	00000000 $a
+0004a361 l     F .text	00000008 __memcpy_from_thumb
+0004a360 l       .text	00000000 $t
+0004a364 l       .text	00000000 $a
+0004a369 l     F .text	00000008 ____munmap_from_thumb
+0004a368 l       .text	00000000 $t
+0004a36c l       .text	00000000 $a
+0004a371 l     F .text	00000008 ____read_from_thumb
+0004a370 l       .text	00000000 $t
+0004a374 l       .text	00000000 $a
+0004a378 l     F .text	00000008 ____libc_disable_asynccancel_veneer
+0004a378 l       .text	00000000 $a
+0004a37c l       .text	00000000 $d
+0004a380 l     F .text	00000008 ____sigjmp_save_veneer
+0004a380 l       .text	00000000 $a
+0004a384 l       .text	00000000 $d
+0004a388 l     F .text	00000008 ____libc_enable_asynccancel_veneer
+0004a388 l       .text	00000000 $a
+0004a38c l       .text	00000000 $d
+0004a391 l     F .text	00000008 __memset_from_thumb
+0004a390 l       .text	00000000 $t
+0004a394 l       .text	00000000 $a
+0004ab91 l     F __libc_freeres_fn	00000008 ____munmap_from_thumb
+0004ab90 l       __libc_freeres_fn	00000000 $t
+0004ab94 l       __libc_freeres_fn	00000000 $a
+00051dbc g     O .rodata	00000024 _nl_C_LC_CTYPE
+00010911 g     F .text	00000378 __vsyslog_chk
+0006b010 g     O .bss	00000004 __have_o_cloexec
+00049a95 g     F .text	00000022 .hidden ___Unwind_ForcedUnwind
+000497e1 g     F .text	0000005e .hidden __gnu_Unwind_RaiseException
+00021d71  w    F .text	00000016 stpcpy
+00052258 g     O .rodata	0000004c _nl_C_LC_CTYPE_class_print
+00026e99  w    F .text	000000b0 tsearch
+00069934 g     O .data	00000004 __morecore
+00026cc9 g     F .text	0000001a __getdtablesize
+0000a641 g     F .text	00000022 _IO_remove_marker
+00000000  w      *UND*	00000000 _nl_current_LC_COLLATE_used
+000154a1 g     F .text	000000b0 __libc_sigaction
+0003450d g     F .text	00000018 __isnanl
+0003fc01  w    F .text	0000001e mbrlen
+00021509 g     F .text	00000010 strcpy
+0001eb79 g     F .text	0000006a _IO_wdefault_xsgetn
+00009345 g     F .text	00000004 __fcloseall
+00010ca9 g     F .text	00000022 __syslog
+000489ed g     F .text	00000060 _dl_vsym
+0002a8a5 g     F .text	00000078 _dl_setup_hash
+000099f1 g     F .text	000001a4 _IO_link_in
+0006ac68 g     O .bss	00000004 __daylight
+00015f25  w    F .text	000000ec unsetenv
+00069948  w    O .data	00000004 __malloc_hook
+0002c4a1 g     F .text	0000002a _dl_debug_printf
+00015425  w    F .text	0000007c gsignal
+0000a0b9 g     F .text	00000034 _IO_sputbackc
+00052408 g     O .rodata	00000048 _nl_C_LC_CTYPE_class_upper
+0000a05d g     F .text	00000050 _IO_default_finish
+0000f7c1  w    F .text	000002cc bcmp
+000484a9 g     F .text	0000029c _dl_check_map_versions
+000304a5 g     F .text	000008d8 __gconv_transform_utf8_internal
+0006a544  w    O .bss	00000004 __malloc_initialize_hook
+0000f749 g     F .text	00000010 __default_morecore
+0006afb8 g     O .bss	00000004 __libc_argc
+00034530 g     F .text	00000054 __longjmp
+0002c12d g     F .text	0000003e _dl_receive_error
+000208e9  w    F .text	00000048 _IO_file_finish
+00000000  w      *UND*	00000000 _nl_current_LC_TELEPHONE
+00051f38 g     O .rodata	0000005c _nl_C_LC_CTYPE_width
+00026b99  w    F .text	0000002c getrlimit
+0004a511 g     F __libc_freeres_fn	00000084 _nl_unload_domain
+00026c25  w    F .text	0000007c writev
+000113b4 g     F .text	0000001c __connect_nocancel
+000457d5 g     F .text	00000028 __dlinfo
+00034eb1 g     F .text	000000ac __mpn_impn_mul_n_basecase
+0001ea0d g     F .text	00000032 _IO_wdoallocbuf
+00025c59  w    F .text	0000000e getgid
+0002ccb0 g     F .text	00000008 .hidden __aeabi_read_tp
+00025c05 g     F .text	00000034 __getpid
+0001ceb9 g     F .text	00000148 __register_printf_modifier
+00010c89 g     F .text	0000001e __syslog_chk
+0000a811 g     F .text	0000004c _IO_list_lock
+00025c79  w    F .text	00000690 sysconf
+00042405 g     F .text	00000018 __strtod_internal
+000694a4 g     O .data	00000004 stdout
+0001e0cd g     F .text	00000094 _IO_seekoff_unlocked
+000135b5 g     F .text	00000e44 _nl_load_domain
+0006ac68  w    O .bss	00000004 daylight
+00009f99 g     F .text	00000036 _IO_default_doallocate
+000699b4 g     O .data	00000004 __libc_multiple_libcs
+00026b99 g     F .text	0000002c __new_getrlimit
+00026cc9  w    F .text	0000001a getdtablesize
+000423c1  w    F .text	00000010 __strtoull_l
+00040981  w    F .text	00000074 fdopendir
+000101f1 g     F .text	000000ae _wordcopy_fwd_aligned
+00011fc1 g     F .text	0000001a _dl_important_hwcaps
+00026325 g     F .text	00000030 ___xstat64
+00020571 g     F .text	00000110 _IO_new_file_xsputn
+0002ad11 g     F .text	00000044 _dl_reloc_bad_type
+0001e781 g     F .text	0000001c _IO_least_wmarker
+0000a059 g     F .text	00000004 _IO_default_sync
+000113d0  w    F .text	00000068 connect
+00020851  w    F .text	00000098 _IO_file_sync
+00023021 g     F .text	00000094 __tzset
+00041a45 g     F .text	00000020 __strtoull_internal
+0003517d g     F .text	000000a8 __mpn_impn_sqr_n_basecase
+00000000  w      *UND*	00000000 __pthread_once
+000423c1  w    F .text	00000010 strtoull_l
+0001ed65 g     F .text	0000004c _IO_seekwmark
+0001da81 g     F .text	0000010e _IO_fflush
+0004def0 g     O .rodata	00000054 _IO_wfile_jumps
+000522e8 g     O .rodata	0000004c _nl_C_LC_CTYPE_class_xdigit
+00000000  w      *UND*	00000000 __pthread_mutex_lock
+000200b1  w    F .text	00000078 _IO_file_write
+00045885 g     F .text	0000006c strerror
+0002f5c9 g     F .text	0000022c __gconv_transform_ascii_internal
+0001135d g     F .text	00000028 __init_misc
+00035441 g     F .text	00000050 __mpn_sub_n
+000225a1 g     F .text	00000058 __wcsmbs_clone_conv
+0003f975  w    F .text	00000024 strndup
+00025c49  w    F .text	0000000e geteuid
+000408f1 g     F .text	00000064 __getdents
+0006aef8 g     O .bss	00000004 _dl_profile_output
+00034591 g     F .text	00000048 __mpn_cmp
+0003fc01 g     F .text	0000001e __mbrlen
+0000e4d9  w    F .text	00000168 malloc_get_state
+0003fa5d  w    F .text	00000078 argz_add_sep
+00041991 g     F .text	00000072 __mpn_addmul_1
+000264bd g     F .text	00000018 __openat_2
+00021621 g     F .text	00000080 __strnlen
+0002d209 g     F .text	00000138 __gconv
+0000e641 g     F .text	00000070 __cfree
+0000fa90 g     F .text	00000340 memmove
+00030d7d g     F .text	000004a4 __gconv_transform_ucs2_internal
+0006afd0 g     O .bss	00000004 __printf_modifier_table
+00040ba9 g     F .text	000000a8 __tcgetattr
+0002a999 g     F .text	0000019c _dl_new_object
+00049951 g     F .text	00000000 .hidden __gnu_Unwind_Save_VFP
+00049a71 g     F .text	00000022 .hidden _Unwind_Resume_or_Rethrow
+0000ef7d g     F .text	00000324 __calloc
+0002cadd g     F .text	00000058 _dl_make_stack_executable
+00009ebd g     F .text	00000060 _IO_default_xsgetn
+00010e20  w    F .text	0000001c munmap
+00068fd8 g     O .data.rel.ro	00000004 __libc_stack_end
+0003f62d  w    F .text	00000028 fileno_unlocked
+00051348 g     O .rodata	00000010 _nl_default_locale_path
+00068fd0 g     O .data.rel.ro	00000004 __stack_chk_guard
+0002e0b9 g     F .text	00000294 __gconv_get_path
+0001c089 g     F .text	000000dc __register_printf_specifier
+000699a4 g     O .data	00000004 _dl_debug_fd
+0004c7e8 g     O .rodata	00000024 _nl_C_LC_NAME
+00026e99 g     F .text	000000b0 __tsearch
+0001e3a9 g     F .text	000000d4 _IO_vasprintf
+00016139 g     F .text	00000300 ____strtol_l_internal
+00020469 g     F .text	000000d0 _IO_file_seekoff_mmap
+00049235 g     F .text	00000006 .hidden __aeabi_unwind_cpp_pr0
+00010675 g     F .text	0000009c __libc_fcntl
+00014d0d g     F .text	00000034 __gettext_free_exp
+0003450d g     F .text	00000018 __isnan
+0002979d g     F .text	000003dc _dl_load_cache_lookup
+00000001 g       *ABS*	00000000 _nl_current_LC_NUMERIC_used
+00026620  w    F .text	00000068 __write
+000152b5 g     F .text	00000094 __gettext_extract_plural
+0000f4ad  w    F .text	00000148 malloc_stats
+00009eb1 g     F .text	0000000c _IO_sgetn
+00010dd0 g     F .text	00000048 __mmap
+00010e40 g     F .text	0000001c __mprotect
+000699ac g     O .data	00000004 _dl_use_load_bias
+0006afc0 g     O .bss	00000004 _nl_domain_bindings
+0006b034 g     O .bss	00000004 __gconv_path_envvar
+00049f95 g     F .text	0000001c .hidden _Unwind_GetRegionStart
+0001d225 g     F .text	0000001e __dprintf
+00015b29 g     F .text	000003bc __add_to_environ
+0006aefc g     O .bss	00000008 _dl_initial_searchlist
+00015a6d g     F .text	000000bc getenv
+0001fb2d g     F .text	00000006 _IO_file_seek
+00049a71 g     F .text	00000022 .hidden ___Unwind_Resume_or_Rethrow
+0003fae9  w    F .text	0000004a wcslen
+0003ea3d g     F .text	00000548 __parse_one_specwc
+0006b074 g       *ABS*	00000000 _bss_end__
+000168c1 g     F .text	0000008c _itoa_word
+00000010 g       .tbss	00000004 errno
+00042451  w    F .text	0000001c strtold
+00022fb1 g     F .text	00000070 __tz_compute
+00025c69  w    F .text	0000000e getegid
+00000000  w      *UND*	00000000 __pthread_rwlock_init
+0002720d g     F .text	00000008 __tdestroy
+00021db5 g     F .text	00000074 __rawmemchr
+00040d79 g     F .text	00000170 _dl_profile_fixup
+000266b1 g     F .text	000004e8 __getcwd
+00000000  w      *UND*	00000000 _nl_current_LC_IDENTIFICATION_used
+0003fd99 g     F .text	0000024c __mbsrtowcs_l
+00049ab9 g     F .text	00000022 .hidden _Unwind_Backtrace
+00000000  w      *UND*	00000000 __pthread_key_create
+0000a611 g     F .text	0000002e _IO_init_marker
+000160b9 g     F .text	00000020 __strtol_internal
+00051194 g     O .rodata	0000000d _nl_category_name_idxs
+00015631 g     F .text	00000048 bsearch
+00021ebd  w    F .text	00000006 wmempcpy
+000699c4 g     O .data	00000008 __tzname
+0001e971 g     F .text	0000001e __woverflow
+00000000  w      *UND*	00000000 __cxa_begin_cleanup
+00069128 g     O .data	000000a0 _IO_2_1_stdout_
+0001c165 g     F .text	00000004 __register_printf_function
+0001e271  w    F .text	00000046 vsscanf
+000353f5 g     F .text	0000004c __mpn_mul_n
+000206bd g     F .text	00000028 _IO_new_file_init
+00026ca1  w    F .text	00000028 getpagesize
+00025c05  w    F .text	00000034 getpid
+00000000  w      *UND*	00000000 __pthread_rwlock_wrlock
+00045475  w    F .text	00000008 __strtold_l
+00049931 g     F .text	00000018 .hidden __restore_core_regs
+00049971 g     F .text	00000000 .hidden __gnu_Unwind_Save_VFP_D_16_to_31
+00032bf5 g     F .text	000002b8 __gconv_lookup_cache
+00040aad g     F .text	000000a8 __openat64
+0002c549 g     F .text	00000054 _dl_higher_prime_number
+0005217c g     O .rodata	0000004c _nl_C_LC_CTYPE_class_cntrl
+00015a5d g     F .text	00000010 qsort
+00000000  w      *UND*	00000000 __cxa_call_unexpected
+0000f681 g     F .text	00000048 __posix_memalign
+0000a455 g     F .text	000001bc _IO_flush_all_linebuffered
+00000000  w      *UND*	00000000 _nl_current_LC_TELEPHONE_used
+0001d899  w    F .text	000001e8 _IO_fclose
+00000000  w      *UND*	00000000 _nl_current_LC_PAPER
+00041a05 g     F .text	00000020 __strtoll_internal
+0006b028 g     O .bss	00000004 __gconv_modules_db
+000146dd g     F .text	00000110 _nl_expand_alias
+0001f685 g     F .text	000000be _IO_wdo_write
+0003f031  w    F .text	00000218 __getdelim
+00026590  w    F .text	00000068 __read
+0003fd7d g     F .text	0000001a __wcschrnul
+00009e1d g     F .text	00000006 _IO_default_underflow
+00000000  w      *UND*	00000000 _dl_rtld_map
+0001d265 g     F .text	0000004a _IO_funlockfile
+00047df9 g     F .text	000000ac _dl_init
+00032a69 g     F .text	00000140 __gconv_load_cache
+000155f0 g     F .text	00000008 __default_sa_restorer_v1
+0000f5f5 g     F .text	00000088 __mallinfo
+0002f161 g     F .text	00000468 __gconv_transform_ucs4le_internal
+0006af04 g     O .bss	00000004 _dl_platformlen
+0006aec0 g     O .bss	00000004 _dl_tls_static_used
+0001ea79 g     F .text	0000004e _IO_switch_to_wget_mode
+00022641 g     F .text	00000008 __localtime_r
+00069944  w    O .data	00000004 __realloc_hook
+000497dd g     F .text	00000004 .hidden _Unwind_GetCFA
+0006907c g     O .data	00000004 __exit_funcs
+00014dd1 g     F .text	000004e2 __gettextparse
+0000fec0 g     F .text	00000330 memcpy
+000470b0  w    F .text	0000001c setitimer
+00009e41 g     F .text	00000070 _IO_default_xsputn
+00034b49 g     F .text	00000054 __mpn_lshift
+00033b79 g     F .text	00000230 _nl_load_locale
+00021e29  w    F .text	00000022 argz_count
+0001a915 g     F .text	00001774 ___printf_fp
+0001df09 g     F .text	00000154 _IO_fwrite
+00049539 g     F .text	0000002e .hidden _Unwind_VRS_Set
+00009f1d g     F .text	00000062 _IO_default_setbuf
+0000a0ed g     F .text	00000030 _IO_sungetc
+0002abb1 g     F .text	0000008c _dl_try_allocate_static_tls
+00047009 g     F .text	00000044 __dlsym
+00032a5d g     F .text	0000000c __gconv_get_cache
+00011fdd g     F .text	00000038 _dl_addr_inside_object
+00032f39 g     F .text	00000100 __gconv_find_shlib
+0003f4d1 g     F .text	0000015c _IO_fwide
+000113d0  w    F .text	00000068 __connect_internal
+00041f2d  w    F .text	00000010 strtoll_l
+00033da9 g     F .text	0000003a _nl_unload_locale
+00020931 g     F .text	000000d0 _IO_new_file_close_it
+0006af08 g     O .bss	00000004 _dl_debug_mask
+0001f905 g     F .text	000001a4 _IO_wfile_overflow
+0000e8c9 g     F .text	00000270 __libc_memalign
+000091e9  w    F .text	0000015c puts
+0003278d g     F .text	000001e0 __gconv_translit_find
+000417a1 g     F .text	0000002c __libc_dlsym_private
+00009c69 g     F .text	00000016 __overflow
+0003fc21  w    F .text	00000130 mbrtowc
+0003fb35 g     F .text	000000cc __btowc
+00034be5 g     F .text	0000025e __mpn_mul
+0004d3ac g     O .rodata	0000008c __strtol_ul_max_tab
+00011d9d g     F .text	00000224 _dl_non_dynamic_init
+00025c39  w    F .text	0000000e getuid
+000091b1 g     F .text	0000002a __internal_atexit
+00040871 g     F .text	0000007e rewinddir
+000344f1 g     F .text	0000001a __isinf
+0000e8c9 g     F .text	00000270 __memalign
+00000000  w      *UND*	00000000 _nl_current_LC_MEASUREMENT
+00035491 g     F .text	00000076 __mpn_submul_1
+0001fc89 g     F .text	00000030 _IO_file_close
+00021e4d  w    F .text	00000024 argz_stringify
+0000f2a1 g     F .text	000001e4 __malloc_trim
+0004571d g     F .text	00000008 __dladdr
+000699b8 g     O .data	00000004 _nl_current_default_domain
+0006afc4 g     O .bss	00000004 _nl_msg_cat_cntr
+0000e19d g     F .text	00000248 malloc
+0005f64c g     O .rodata	00000014 __libio_translit
+00026380  w    F .text	00000068 __open
+0000a6ed g     F .text	00000012 _IO_unsave_markers
+00048a61 g     F .text	0000025c .hidden __udivsi3
+00053450 g     O .rodata	00000300 _nl_C_LC_CTYPE_class
+00040b91  w    F .text	00000016 isatty
+00042721 g     F .text	000014ac ____strtof_l_internal
+0006af10 g     O .bss	00000008 _dl_load_adds
+0004d35c g     O .rodata	00000014 __gettext_germanic_plural
+00027225 g     F .text	0000003c __llseek
+00022439 g     F .text	00000030 __wcsmbs_getfct
+000691c8 g     O .data	000000a0 _IO_2_1_stdin_
+0002e6d1 g     F .text	00000350 __gconv_transform_internal_ucs4
+00026309 g     F .text	0000001a __get_child_max
+0002acc1 g     F .text	00000050 _dl_protect_relro
+00040aad  w    F .text	000000a8 openat64
+00021539 g     F .text	000000e8 __strerror_r
+0001d205 g     F .text	0000001e __asprintf
+0003fb35  w    F .text	000000cc btowc
+00022469 g     F .text	00000138 __wcsmbs_load_conv
+00041a25 g     F .text	00000020 strtoll
+000252c1 g     F .text	0000001a __strftime_l
+00035225 g     F .text	000001d0 __mpn_impn_sqr_n
+0005f5e8  w    O .rodata	00000004 sys_nerr
+0001ceb9  w    F .text	00000148 register_printf_modifier
+0001e335 g     F .text	00000074 open_memstream
+0004c838 g     O .rodata	00000024 _nl_C_LC_ADDRESS
+0006af18 g     O .bss	00000004 _dl_wait_lookup_done
+0002cc1d g     F .text	0000000e _dl_mcount_wrapper
+0002c815 g     F .text	00000064 _dl_deallocate_tls
+0005220c g     O .rodata	0000004c _nl_C_LC_CTYPE_class_graph
+00034f5d g     F .text	00000220 __mpn_impn_mul_n
+000344d9 g     F .text	00000018 __current_locale_name
+00069c08 g       *ABS*	00000000 __bss_start__
+00000000  w      *UND*	00000000 __pthread_rwlock_rdlock
+000498c1 g     F .text	00000070 .hidden __gnu_Unwind_Backtrace
+00052450 g     O .rodata	00000600 _nl_C_LC_CTYPE_tolower
+0006af1c g     O .bss	00000004 _dl_profile
+00011775 g     F .text	0000012c ___vfprintf_chk
+00016119 g     F .text	00000020 strtoul
+00069074 g     O .data	00000000 .hidden __dso_handle
+00046f05 g     F .text	00000014 __mpn_construct_float
+0003f999 g     F .text	00000044 __strsep
+00009081 g     F .text	00000130 __new_exitfn
+000114f1 g     F .text	00000024 __libc_alloca_cutoff
+00000000  w      *UND*	00000000 _nl_current_LC_NAME_used
+00048025 g     F .text	00000230 _dl_fini
+00045475  w    F .text	00000008 strtold_l
+00000000  w      *UND*	00000000 __nptl_deallocate_tsd
+0001e79d g     F .text	00000022 _IO_switch_to_main_wget_area
+00012575 g     F .text	00000014 __dcgettext
+00008e31 g     F .text	0000002c __libc_csu_fini
+00000001 g       *ABS*	00000000 _nl_current_LC_CTYPE_used
+0001dd89 g     F .text	00000180 _IO_ftell
+000252c1  w    F .text	0000001a strftime_l
+0002149d g     F .text	00000018 _IO_str_init_readonly
+00020135  w    F .text	000002dc _IO_file_seekoff
+00000000  w      *UND*	00000000 _nl_current_LC_TIME
+00012275 g     F .text	000000a4 _dl_discover_osversion
+00025775 g     F .text	0000002a _nl_cleanup_time
+00012239 g     F .text	0000003c __libc_init_secure
+00049961 g     F .text	00000000 .hidden __gnu_Unwind_Save_VFP_D
+000114d0  w    F .text	0000001c socket
+0002ac61 g     F .text	00000060 _dl_nothread_init_static_tls
+00000000  w      *UND*	00000000 _pthread_cleanup_pop_restore
+0003ffe5 g     F .text	000002a0 __offtime
+0004078d  w    F .text	000000e4 readdir
+0001ecdd g     F .text	00000030 _IO_adjust_wcolumn
+000160f9 g     F .text	00000020 __strtoul_internal
+000212fd g     F .text	0000014e _IO_str_seekoff
+0000ed65  w    F .text	00000218 pvalloc
+00012535 g     F .text	00000040 __ctype_init
+00025c59 g     F .text	0000000e __getgid
+00049569 g     F .text	00000272 .hidden _Unwind_VRS_Pop
+00000000  w      *UND*	00000000 __pthread_rwlock_unlock
+00049225  w    F .text	00000006 .hidden __aeabi_unwind_cpp_pr2
+00020411  w    F .text	00000020 _IO_file_setbuf
+00027225 g     F .text	0000003c __lseek64
+00020a01 g     F .text	0000036c _IO_new_file_fopen
+0000fe51  w    F .text	00000066 mempcpy
+0000f5f5 g     F .text	00000088 __libc_mallinfo
+0001da81  w    F .text	0000010e fflush
+0001dc5d g     F .text	00000006 _IO_new_fopen
+0006a548  w    O .bss	00000004 _environ
+00049ab9 g     F .text	00000022 .hidden ___Unwind_Backtrace
+0002e6c1 g     F .text	0000000e __gconv_btwoc_ascii
+00000000  w      *UND*	00000000 _nl_current_LC_MESSAGES
+0003fae9 g     F .text	0000004a __wcslen
+0000a7e9 g     F .text	00000004 _IO_default_write
+00026590 g     F .text	00000068 __libc_read
+0001d7f9 g     F .text	000000a0 __fxprintf
+00022f2d g     F .text	00000084 __tzname_max
+0006aee8 g     O .bss	00000004 __have_sock_cloexec
+000115f5 g     F .text	00000064 __libc_disable_asynccancel
+0002dac9 g     F .text	00000218 __gconv_find_transform
+0004a0a5 g     F .text	000002b0 .hidden __gcc_personality_v0
+00026325 g     F .text	00000030 __xstat64
+0001fcb9 g     F .text	00000040 _IO_file_close_mmap
+0002c675 g     F .text	00000058 _dl_allocate_tls_storage
+000105e0 g     F .text	00000014 __exit_thread
+00040b70  w    F .text	0000001c lseek
+0000e6b1 g     F .text	000001ec __libc_realloc
+00021e71  w    F .text	00000006 wmemcpy
+00000020 g       .tbss	00000004 __libc_tsd_CTYPE_TOLOWER
+00031921 g     F .text	00000464 __gconv_transform_ucs2reverse_internal
+00016011  w    F .text	00000094 clearenv
+0006aec4 g     O .bss	00000004 _dl_tls_static_align
+0002ca59 g     F .text	00000084 _dl_scope_free
+0006a548 g     O .bss	00000004 __environ
+00010dd0  w    F .text	00000048 mmap
+00010569  w    F .text	00000058 _Exit
+00016439  w    F .text	00000010 strtol_l
+0003394d g     F .text	0000022c _nl_intern_locale_data
+0002a125 g     F .text	00000780 _dl_lookup_symbol_x
+00049a29 g     F .text	00000022 .hidden ___Unwind_RaiseException
+00022411 g     F .text	00000028 _nl_cleanup_ctype
+0006aec8 g     O .bss	00000004 _dl_tls_max_dtv_idx
+00011460  w    F .text	00000068 send
+0005203c g     O .rodata	000000a8 _nl_C_LC_CTYPE_map_toupper
+00052130 g     O .rodata	0000004c _nl_C_LC_CTYPE_class_punct
+00008e81 g     F .text	0000017c abort
+00049a4d g     F .text	00000022 .hidden ___Unwind_Resume
+0006ad08 g     O .bss	00000020 __libc_setlocale_lock
+00015401 g     F .text	00000022 __sigjmp_save
+00046e91 g     F .text	00000074 _dl_close
+0001a915 g     F .text	00001774 __printf_fp
+000699c4  w    O .data	00000008 tzname
+0006af20 g     O .bss	00000004 _dl_bind_not
+00068fdc g     O .data.rel.ro	00000004 __libc_enable_secure
+0001e5e1 g     F .text	0000006c _IO_wpadn
+00034479 g     F .text	00000060 _nl_postload_ctype
+00026f71  w    F .text	0000028c tdelete
+0001dc65 g     F .text	00000124 _IO_fputs
+0002ea21 g     F .text	00000400 __gconv_transform_ucs4_internal
+00026364 g     F .text	0000001c __open_nocancel
+00008159 g     F .init	00000000 _init
+00052334 g     O .rodata	00000044 _nl_C_LC_CTYPE_class_digit
+000210d9 g     F .text	0000001e _IO_str_pbackfail
+0001f745 g     F .text	000000e4 _IO_wfile_xsputn
+0006b038 g     O .bss	00000004 __gconv_max_path_elem_len
+0000a7f5 g     F .text	00000002 _IO_default_imbue
+000345d9 g     F .text	0000056e __mpn_divrem
+00041a25  w    F .text	00000020 strtoq
+000160d9 g     F .text	00000020 strtol
+000153b0 g     F .text	0000004c __sigsetjmp
+00027225 g     F .text	0000003c __libc_lseek64
+00045855 g     F .text	00000030 __dlmopen
+00011931 g     F .text	000001e0 __backtrace_symbols_fd
+00008dad g     F .text	0000000e __tls_get_addr
+00021621  w    F .text	00000080 strnlen
+00021db5  w    F .text	00000074 rawmemchr
+00034525 g     F .text	00000006 __signbit
+00008dbd g     F .text	00000002 __libc_csu_irel
+00049979 g     F .text	00000000 .hidden __gnu_Unwind_Restore_WMMXD
+000259e0  w    F .text	0000001c uname
+0001342d g     F .text	00000188 _nl_find_domain
+0000a7e1 g     F .text	00000006 _IO_default_read
+00020931  w    F .text	000000d0 _IO_file_close_it
+0005f5e8 g     O .rodata	00000004 __sys_nerr_internal
+0005f5e8  w    O .rodata	00000004 _sys_nerr
+0006af24 g     O .bss	00000004 _dl_platform
+0003583d g     F .text	00000634 _itowa
+0000a7f9 g     F .text	0000000c _IO_iter_begin
+00043f29 g     F .text	00001540 ____strtod_l_internal
+00053050 g     O .rodata	00000400 _nl_C_LC_CTYPE_class32
+00000000  w      *UND*	00000000 pthread_setcancelstate
+0002c659 g     F .text	0000001a _dl_get_tls_static_info
+000221ed  w    F .text	000001bc mbsnrtowcs
+000217cd g     F .text	0000002a strrchr
+0001251d g     F .text	00000018 __ctype_tolower_loc
+00008b69 g     F .text	00000024 __libc_check_standard_fds
+0006a53c  w    O .bss	00000004 __after_morecore_hook
+00046f19 g     F .text	00000020 __mpn_construct_double
+0000ef7d  w    F .text	00000324 calloc
+000604ac g       *ABS*	00000000 __start___libc_atexit
+000470b0 g     F .text	0000001c __setitimer
+00021d89  w    F .text	0000002a strcasecmp_l
+0006afb4 g     O .bss	00000004 __libc_enable_secure_decided
+00020129 g     F .text	0000000c _IO_file_stat
+0001237d g     F .text	00000006 _dl_start
+00000000  w      *UND*	00000000 __pthread_mutex_unlock
+0000f485  w    F .text	00000026 malloc_usable_size
+0001d245 g     F .text	0000001e __sscanf
+00042439 g     F .text	00000018 __strtold_internal
+0002720d  w    F .text	00000008 tdestroy
+00023a49 g     F .text	00000154 __tzfile_default
+0001f829 g     F .text	000000dc _IO_wfile_sync
+0000ed65 g     F .text	00000218 __libc_pvalloc
+00041f2d  w    F .text	00000010 __strtoll_l
+0002cb34 g     F .text	00000024 _dl_runtime_resolve
+0004241d  w    F .text	0000001c strtod
+00035e71 g     F .text	000050e2 _IO_vfscanf_internal
+000344f1  w    F .text	0000001a isinf
+000217cd  w    F .text	0000002a rindex
+000272ed g     F .text	0000012c __readonly_area
+0001a8d9 g     F .text	0000003a __guess_grouping
+00000000  w      *UND*	00000000 __pthread_getspecific
+00026620  w    F .text	00000068 write
+0000eb5d g     F .text	00000208 __libc_valloc
+00045469  w    F .text	00000008 __strtod_l
+000118e9  w    F .text	00000048 backtrace
+00051f94 g     O .rodata	000000a8 _nl_C_LC_CTYPE_map_tolower
+0006b008 g     O .bss	00000004 __fork_generation_pointer
+000118e9 g     F .text	00000048 __backtrace
+0004a7ed g     F __libc_freeres_fn	000001e0 _nl_locale_subfreeres
+0006a548  w    O .bss	00000004 environ
+00012ef9 g     F .text	00000534 __dcigettext
+0001d1e5 g     F .text	0000001e fprintf
+0002299d g     F .text	000004a8 __tzset_parse_tz
+0001e5a5 g     F .text	0000003a fputs_unlocked
+0002a91d g     F .text	0000007c _dl_add_to_namespace_list
+0004e0d4 g     O .rodata	00000054 _IO_str_jumps
+000210b5 g     F .text	00000022 _IO_str_finish
+00014b15 g     F .text	000000a8 _nl_normalize_codeset
+00012575  w    F .text	00000014 dcgettext
+00069078 g     O .data	00000004 _dl_tls_static_size
+0002c4cd g     F .text	0000002c _dl_debug_printf_c
+0000a7ed g     F .text	00000006 _IO_default_showmanyc
+00043bcd  w    F .text	00000008 strtof_l
+000110b5 g     F .text	00000218 __get_nprocs
+00040b91 g     F .text	00000016 __isatty
+00049949 g     F .text	00000000 .hidden __gnu_Unwind_Restore_VFP
+0006ab5c g     O .bss	00000020 _nl_state_lock
+00045a79 g     F .text	0000000c __profile_frequency
+0006af28 g     O .bss	00000004 _dl_lazy
+0002c16d g     F .text	00000002 _dl_debug_state
+00022680  w    F .text	0000001c __gettimeofday_internal
+0002f7f5 g     F .text	00000538 __gconv_transform_internal_ascii
+00021d71 g     F .text	00000016 __stpcpy
+00026cf0 g     F .text	00000054 __mmap64
+0002545d g     F .text	000000b0 _nl_parse_alt_digit
+00022680 g     F .text	0000001c __gettimeofday
+000210f9 g     F .text	000000f6 _IO_str_overflow
+00000000  w      *UND*	00000000 __deregister_frame_info
+0002cc49 g     F .text	00000010 _dl_initial_error_catch_tsd
+00010e60 g     F .text	0000001c madvise
+0000e19d g     F .text	00000248 __malloc
+00040a7d g     F .text	00000030 __openat64_nocancel
+00011460  w    F .text	00000068 __send
+00028ea9 g     F .text	000001f0 _dl_init_paths
+00048cd9 g     F .text	00000000 .hidden __aeabi_idiv
+0001fef1 g     F .text	0000011a _IO_file_xsgetn
+00015349 g     F .text	00000022 __hash_string
+0000a331 g     F .text	0000011c _IO_cleanup
+000699b0 g     O .data	00000004 _dl_argv
+00009f81 g     F .text	00000018 _IO_default_seekpos
+0002ccc1 g     F .text	00000548 __gconv_open
+0000e641 g     F .text	00000070 __free
+00049a4d g     F .text	00000022 .hidden _Unwind_Resume
+00046fdd g     F .text	0000001c __dlclose
+000498b1 g     F .text	0000000e .hidden _Unwind_DeleteException
+0006abe0 g     O .bss	00000004 __fpu_control
+000498ad g     F .text	00000002 .hidden _Unwind_Complete
+00031221 g     F .text	00000700 __gconv_transform_internal_ucs2
+0003f655 g     F .text	00000118 fseek
+00011390  w    F .text	00000020 mremap
+00026b99  w    F .text	0000002c __getrlimit
+00020835 g     F .text	0000001a _IO_new_do_write
+00000004 g       .tdata	00000004 _nl_current_LC_CTYPE
+0005f908 g     O .rodata	00000118 __strtol_ull_max_tab
+000258ed g     F .text	000000ec __readdir64
+00020d6d  w    F .text	000001d8 _IO_file_underflow
+00015610 g     F .text	00000008 __default_rt_sa_restorer_v1
+0003f031  w    F .text	00000218 getdelim
+00045471 g     F .text	00000004 ____strtold_l_internal
+00032f21 g     F .text	00000018 __gconv_release_shlib
+00026574 g     F .text	0000001c __read_nocancel
+0004c694 g     O .rodata	00000024 _nl_C_LC_MONETARY
+000147ed g     F .text	00000328 _nl_make_l10nflist
+0001dbc1 g     F .text	0000009c __fopen_internal
+0000a009 g     F .text	00000038 _IO_no_init
+000104cd g     F .text	0000009a __strchrnul
+000417cd g     F .text	00000018 __libc_register_dl_open_hook
+0005fad0 g     O .rodata	00000028 _tens_in_limb
+0001e05d g     F .text	00000070 _IO_padn
+00020f45  w    F .text	00000138 _IO_file_overflow
+00021cd1 g     F .text	0000009c memchr
+0003f249 g     F .text	000000da _IO_getline_info
+00010ccd g     F .text	00000012 __vsyslog
+00008da5  w    F .text	00000008 __pthread_initialize_minimal
+0006b074 g       *ABS*	00000000 __bss_end__
+0004078d g     F .text	000000e4 __readdir
+0001d2b1 g     F .text	00000548 __parse_one_specmb
+00010601 g     F .text	00000030 ___fxstat64
+000694a8 g     O .data	00000004 stdin
+00026f49  w    F .text	00000028 tfind
+0001694d g     F .text	0000060a _itoa
+00011931  w    F .text	000001e0 backtrace_symbols_fd
+00000000  w      *UND*	00000000 _nl_current_LC_TIME_used
+0002cb58 g     F .text	000000c4 _dl_runtime_profile
+00021495 g     F .text	00000008 _IO_str_init_static
+000694a4 g     O .data	00000004 .hidden _IO_stdout
+00028b0d g     F .text	000001bc _dl_dst_substitute
+0005df50 g     O .rodata	00000090 _fpioconst_pow10
+000091e9 g     F .text	0000015c _IO_puts
+0006aecc g     O .bss	00000004 _dl_tls_dtv_slotinfo_list
+0001d225 g     F .text	0000001e dprintf
+0002c6cd g     F .text	00000130 _dl_allocate_tls_init
+0006b000 g     O .bss	00000004 __tzname_cur_max
+0002d341 g     F .text	00000060 __gconv_close
+00021ec5 g     F .text	00000158 __wcrtomb
+00040769 g     F .text	00000022 mktime
+0006995c g     O .data	00000004 __progname
+0006ac6c  w    O .bss	00000004 timezone
+00008881 g     F .text	00000000 _start
+000604b0 g       *ABS*	00000000 __stop___libc_atexit
+0000a44d g     F .text	00000006 _IO_flush_all
+0002cc74 g     F .text	00000018 .hidden _dl_tlsdesc_lazy_resolver
+00021ab1 g     F .text	0000021e strstr
+0001d899 g     F .text	000001e8 _IO_new_fclose
+0000a80d g     F .text	00000002 _IO_iter_file
+0000a11d g     F .text	0000002c _IO_adjust_column
+0000a149 g     F .text	000001e8 _IO_flush_all_lockp
+0003f76d g     F .text	00000180 ftello
+00000010 g       .tbss	00000004 __libc_errno
+0000de19  w    F .text	00000384 malloc_set_state
+00016745 g     F .text	0000017c __correctly_grouped_prefixmb
+00012319 g     F .text	00000064 __libc_init_first
+00026590  w    F .text	00000068 read
+000699d0 g     O .data	00000004 _dl_error_catch_tsd
+00049add g     F .text	0000048c .hidden __gnu_unwind_execute
+00010ce1 g     F .text	0000006c openlog
+0002c04d g     F .text	00000068 _dl_signal_cerror
+00035509 g     F .text	000000aa __mpn_extract_double
+00010d4d g     F .text	00000074 closelog
+00021e29 g     F .text	00000022 __argz_count
+000216a1 g     F .text	000000be strncmp
+00000000  w      *UND*	00000000 _nl_current_LC_PAPER_used
+0004cb14 g     O .rodata	00000024 _nl_C_LC_COLLATE
+0001d1e5  w    F .text	0000001e _IO_fprintf
+00049959 g     F .text	00000000 .hidden __gnu_Unwind_Restore_VFP_D
+000160a5 g     F .text	00000014 __secure_getenv
+00014bbd g     F .text	0000014e _nl_explode_name
+0003afc5 g     F .text	000038f4 _IO_vfwprintf
+0001ea41 g     F .text	00000036 _IO_wdefault_doallocate
+0002201d  w    F .text	000001d0 wcsrtombs
+00008ffd g     F .text	00000074 __run_exit_handlers
+0000e19d g     F .text	00000248 __libc_malloc
+00011659 g     F .text	0000002c __linkin_atfork
+00000000  w      *UND*	00000000 __nptl_set_robust
+00021e79 g     F .text	0000003c wmemset
+00011351  w    F .text	0000000c get_avphys_pages
+0000a66d g     F .text	00000020 _IO_marker_delta
+00021761 g     F .text	0000006c strncpy
+0000e641 g     F .text	00000070 __libc_free
+00015ee5  w    F .text	00000040 setenv
+00020539 g     F .text	00000038 _IO_file_underflow_mmap
+0001eca9 g     F .text	00000032 _IO_sungetwc
+0006995c  w    O .data	00000004 program_invocation_short_name
+00010415 g     F .text	000000b8 _wordcopy_bwd_dest_aligned
+00000000  w      *UND*	00000000 __cxa_type_match
+00025895 g     F .text	0000000a __opendir
+000214b5 g     F .text	00000014 _IO_str_count
+0006b07c g     O __libc_freeres_ptrs	00000004 __printf_arginfo_table
+00045bd5 g     F .text	000001e4 _dl_open
+0001d265  w    F .text	0000004a funlockfile
+0001fc75 g     F .text	00000014 _IO_file_underflow_maybe_mmap
+0000ed65 g     F .text	00000218 __pvalloc
+0000e6b1 g     F .text	000001ec realloc
+000522a4 g     O .rodata	00000044 _nl_C_LC_CTYPE_class_space
+00025c69 g     F .text	0000000e __getegid
+00011685 g     F .text	000000f0 __register_atfork
+00009345  w    F .text	00000004 fcloseall
+0004de48 g     O .rodata	00000054 _IO_wfile_jumps_maybe_mmap
+00048745 g     F .text	00000042 _dl_check_all_versions
+0002c171 g     F .text	00000058 _dl_debug_initialize
+000230b5 g     F .text	00000134 __tz_convert
+0003f9dd g     F .text	00000080 __argz_create_sep
+00021519 g     F .text	00000020 __strdup
+00049859 g     F .text	0000003c .hidden __gnu_Unwind_Resume
+0006aed0 g     O .bss	00000001 _dl_tls_dtv_gaps
+0002d3a1 g     F .text	00000008 __gconv_alias_compare
+000091dd g     F .text	0000000c __cxa_atexit
+00015600 g     F .text	00000008 __default_sa_restorer_v2
+00011460 g     F .text	00000068 __libc_send
+00021eb5 g     F .text	00000006 __wmemmove
+00020571  w    F .text	00000110 _IO_file_xsputn
+00026bc5 g     F .text	00000060 __brk
+000258ed  w    F .text	000000ec readdir64
+000512a0 g     O .rodata	00000034 _nl_C
+0001ed41 g     F .text	00000024 _IO_wmarker_delta
+00049969 g     F .text	00000000 .hidden __gnu_Unwind_Restore_VFP_D_16_to_31
+000223a9  w    F .text	00000066 wcsnlen
+0001c089  w    F .text	000000dc register_printf_specifier
+0000f67d g     F .text	00000004 __libc_mallopt
+000272b1  w    F .text	0000003a towctrans
+0000a7d9 g     F .text	00000006 _IO_default_stat
+00020851 g     F .text	00000098 _IO_new_file_sync
+0000f7c1 g     F .text	000002cc memcmp
+0004e028 g     O .rodata	00000054 _IO_file_jumps_maybe_mmap
+00045981 g     F .text	000000f8 __profil
+00000000  w      *UND*	00000000 _nl_current_LC_MESSAGES_used
+00041941 g     F .text	0000004e __mpn_add_n
+0000f2a1  w    F .text	000001e4 malloc_trim
+0000000c g       .tdata	00000004 _nl_current_LC_NUMERIC
+00025a01  w    F .text	00000204 fork
+00000000  w      *UND*	00000000 _nl_current_LC_ADDRESS
+00016449 g     F .text	000002ec ____strtoul_l_internal
+0001d245 g     F .text	0000001e sscanf
+00052a50 g     O .rodata	00000600 _nl_C_LC_CTYPE_toupper
+00049a29 g     F .text	00000022 .hidden _Unwind_RaiseException
+000105c0 g     F .text	0000001c __sched_yield
+00048f89  w    F .text	0000000c .hidden __aeabi_ldiv0
+00021d89 g     F .text	0000002a __strcasecmp_l
+0005e1a0 g     O .rodata	00000090 _itowa_lower_digits
+0000a665 g     F .text	00000008 _IO_marker_difference
+0002c96d g     F .text	000000ec _dl_get_origin
+00015551  w    F .text	00000024 sigaction
+0006af2c g     O .bss	00000004 _dl_phdr
+0003fad5 g     F .text	00000014 wcschr
+0001eac9 g     F .text	00000022 _IO_free_wbackup_area
+000698fc g     O .data	00000004 __libc_malloc_initialized
+0002c519 g     F .text	00000030 _dl_name_match_p
+00033919 g     F .text	00000034 _nl_remove_locale
+00026ca1 g     F .text	00000028 __getpagesize
+0004d45c g     O .rodata	000002bc _itoa_base_table
+0003fc21 g     F .text	00000130 __mbrtowc
+00046fa9 g     F .text	00000030 __dlopen
+00012390 g     F .text	00000030 __syscall_error
+00009c35 g     F .text	00000034 _IO_free_backup_area
+000409f5 g     F .text	00000030 ___lxstat64
+0005d778 g     O .rodata	00000024 _nl_C_LC_TIME
+000206bd  w    F .text	00000028 _IO_file_init
+00010711  w    F .text	00000054 sbrk
+00000000  w      *UND*	00000000 _nl_current_LC_MEASUREMENT_used
+0004d718 g     O .rodata	00000024 _itoa_lower_digits
+00026500 g     F .text	00000068 __libc_close
+00021519  w    F .text	00000020 strdup
+0004c5d8 g     O .rodata	00000074 _nl_C_locobj
+00009c81 g     F .text	0000008c __underflow
+0002e639 g     F .text	00000088 __gconv_get_builtin_trans
+0006af30 g     O .bss	00000004 _dl_nns
+00040a25 g     F .text	00000058 __fxstatat64
+00008dc1 g     F .text	00000070 __libc_csu_init
+00068fd4 g     O .data.rel.ro	00000004 _dl_random
+0006a298 g     O .bss	00000004 __abort_msg
+00041931 g     F .text	00000010 _dl_unmap
+0006af34 g     O .bss	00000004 _dl_scope_free_list
+000112cd g     F .text	00000078 __get_nprocs_conf
+0002d409 g     F .text	00000048 __gconv_release_step
+00041a65 g     F .text	00000020 strtoull
+000214d1  w    F .text	0000001c index
+00000000  w      *UND*	00000000 _pthread_cleanup_push_defer
+00022680  w    F .text	0000001c gettimeofday
+0001dc5d  w    F .text	00000006 fopen
+00069c08 g       *ABS*	00000000 __bss_start
+0004c49c g     O .rodata	00000096 _dl_arm_cap_flags
+00026380 g     F .text	00000068 __libc_open
+00000000  w      *UND*	00000000 __pthread_unwind
+0001e991 g     F .text	0000007a _IO_wdefault_xsputn
+0002fd2d g     F .text	00000778 __gconv_transform_internal_utf8
+00022649 g     F .text	0000000e localtime
+00009e25 g     F .text	0000001a _IO_default_uflow
+0000fdd0 g     F .text	0000007c memset
+00000000  w      *UND*	00000000 __pthread_rwlock_destroy
+00021ebd g     F .text	00000006 __wmempcpy
+00016439  w    F .text	00000010 __strtol_l
+00008925 g     F .text	00000018 main
+00040eed g     F .text	00000510 _dl_start_profile
+0006af38 g     O .bss	00000004 _dl_origin_path
+000223a9 g     F .text	00000066 __wcsnlen
+0004e2c8 g     O .rodata	00000010 __wcsmbs_gconv_fcts_c
+00000001 g       *ABS*	00000000 _nl_current_LC_MONETARY_used
+0005f3cc  w    O .rodata	0000021c _sys_errlist
+0001dd89  w    F .text	00000180 ftell
+000208e9 g     F .text	00000048 _IO_new_file_finish
+00008d31 g     F .text	00000074 _dl_tls_setup
+0006aed4 g     O .bss	00000004 _dl_tls_generation
+0006b02c g     O .bss	00000004 __gconv_lock
+00011345  w    F .text	0000000c get_phys_pages
+0003afc5  w    F .text	000038f4 vfwprintf
+0003fd51  w    F .text	0000002c mbsrtowcs
+000207bd g     F .text	00000078 _IO_new_file_attach
+00000000  w      *UND*	00000000 __nptl_nthreads
+00048a61 g     F .text	00000000 .hidden __aeabi_uidiv
+0000f67d  w    F .text	00000004 mallopt
+0001d899  w    F .text	000001e8 fclose
+00011775 g     F .text	0000012c __vfprintf_chk
+00027419 g     F .text	0000002c __fortify_fail
+0006af3c g     O .bss	00000004 _dl_clktck
+00029705 g     F .text	00000098 _dl_cache_libcmp
+0005f754 g     O .rodata	00000034 __mon_yday
+0002ad55 g     F .text	000011e8 _dl_relocate_object
+0006aeec g     O .bss	00000004 __have_pipe2
+0000f6c9 g     F .text	00000080 malloc_info
+00040ba9  w    F .text	000000a8 tcgetattr
+00026c25 g     F .text	0000007c __libc_writev
+0005f3cc  w    O .rodata	0000021c sys_errlist
+0006af40 g     O .bss	00000004 _dl_dynamic_weak
+000171bd g     F .text	00003654 _IO_vfprintf_internal
+00022659 g     F .text	00000020 time
+00025895  w    F .text	0000000a opendir
+0001eaed g     F .text	0000008c __wunderflow
+00009d0d g     F .text	00000094 __uflow
+00015620 g     F .text	00000008 __default_rt_sa_restorer_v2
+0002573d g     F .text	00000038 _nl_select_era_entry
+00028a99 g     F .text	00000074 _dl_dst_count
+0001d245 g     F .text	0000001e _IO_sscanf
+000124c5 g     F .text	0000002e __assert_fail
+0005df4c g     O .rodata	00000002 _nl_C_name
+000126fd g     F .text	000007fc _nl_find_msg
+00009b95 g     F .text	00000018 _IO_least_marker
+0001e7c1 g     F .text	00000022 _IO_switch_to_wbackup_area
+00010ca9 g     F .text	00000022 syslog
+0000a8b5 g     F .text	00000012 _IO_list_resetlock
+0003fd7d  w    F .text	0000001a wcschrnul
+0006b08c g       *ABS*	00000000 __end__
+0006afd4 g     O .bss	0000002c _tmbuf
+0001e271  w    F .text	00000046 __vsscanf
+00048cd9 g     F .text	00000294 .hidden __divsi3
+00040ee9 g     F .text	00000002 _dl_call_pltexit
+00049841 g     F .text	00000016 .hidden __gnu_Unwind_ForcedUnwind
+0004705d g     F .text	00000048 __dlvsym
+00027225  w    F .text	0000003c llseek
+00040b70  w    F .text	0000001c __lseek
+0004d114 g     O .rodata	00000012 _nl_default_dirname
+0004d10c g     O .rodata	00000006 _nl_POSIX_name
+000271fd g     F .text	00000010 __twalk
+0003f325 g     F .text	00000014 _IO_getline
+0002ac3d g     F .text	00000024 _dl_allocate_static_tls
+0003f8ed g     F .text	0000002c fread_unlocked
+000214f1 g     F .text	00000016 strcmp
+0001e955 g     F .text	0000001c _IO_wdefault_uflow
+00034b9d g     F .text	00000048 __mpn_rshift
+0004c900 g     O .rodata	00000024 _nl_C_LC_MEASUREMENT
+0002d3fd g     F .text	0000000c __gconv_get_alias_db
+0002cc8c g     F .text	0000001c .hidden _dl_tlsdesc_resolve_hold
+00069070  w      .data	00000000 data_start
+000335c1 g     F .text	00000358 _nl_find_locale
+0000da09 g     F .text	00000050 __malloc_check_init
+0006b00c g     O .bss	00000004 __fork_handlers
+0003fd51 g     F .text	0000002c __mbsrtowcs
+0001c165  w    F .text	00000004 register_printf_function
+0006afcc g     O .bss	00000004 __printf_function_table
+00049895 g     F .text	00000018 .hidden __gnu_Unwind_Resume_or_Rethrow
+000253ad g     F .text	000000b0 _nl_get_walt_digit
+00016735  w    F .text	00000010 strtoul_l
+0001db91 g     F .text	00000030 __fopen_maybe_mmap
+00000000  w      *UND*	00000000 __gnu_Unwind_Find_exidx
+00029601 g     F .text	00000104 _dl_rtld_di_serinfo
+000266b1  w    F .text	000004e8 getcwd
+0006af44 g     O .bss	00000004 _dl_sysinfo_dso
+0004c8bc g     O .rodata	00000024 _nl_C_LC_TELEPHONE
+00011575 g     F .text	0000007e __libc_enable_asynccancel
+00000000  w      *UND*	00000000 _dl_starting_up
+000520e4 g     O .rodata	0000004c _nl_C_LC_CTYPE_class_alnum
+00009da1 g     F .text	00000044 _IO_setb
+0004ac29 g     F .fini	00000000 _fini
+0001d11d g     F .text	000000c8 __register_printf_type
+00049931 g     F .text	00000018 .hidden restore_core_regs
+00020a01  w    F .text	0000036c _IO_file_fopen
+00026604 g     F .text	0000001c __write_nocancel
+00049a15 g     F .text	00000000 .hidden __gnu_Unwind_Save_WMMXC
+00045725 g     F .text	00000028 __dladdr1
+0000e8c9  w    F .text	00000270 memalign
+0000fe51 g     F .text	00000066 __mempcpy
+00029b79 g     F .text	0000001c _dl_unload_cache
+00041a85 g     F .text	000004a6 ____strtoll_l_internal
+0001d205  w    F .text	0000001e asprintf
+00020411 g     F .text	00000020 _IO_new_file_setbuf
+00021539  w    F .text	000000e8 strerror_r
+0001edc5 g     F .text	000003a0 _IO_wfile_seekoff
+000423e9  w    F .text	0000001c strtof
+0001f165 g     F .text	00000428 _IO_wfile_underflow
+00045469  w    F .text	00000008 strtod_l
+0003ef85 g     F .text	000000ac _IO_file_doallocate
+0002201d g     F .text	000001d0 __wcsrtombs
+000102a1 g     F .text	000000b2 _wordcopy_fwd_dest_aligned
+00032ba9 g     F .text	0000004c __gconv_compare_alias_cache
+0005df34 g     O .rodata	00000005 _libc_intl_domainname
+00045919  w    F .text	00000030 strncasecmp_l
+0006b03c g     O .bss	00000004 __gconv_path_elem
+0006aef0 g     O .bss	00000004 __libc_multiple_threads
+0005dfe0 g     O .rodata	00000130 __tens
+0001ed0d g     F .text	00000034 _IO_init_wmarker
+000331ad g     F .text	00000414 setlocale
+00000018 g       .tbss	00000004 __libc_tsd_CTYPE_B
+00027215 g     F .text	00000010 __getclktck
+00049fe1 g     F .text	00000006 .hidden _Unwind_GetTextRelBase
+00020681 g     F .text	0000003c _IO_file_read
+000694a0 g     O .data	00000004 stderr
+00026cf0  w    F .text	00000054 mmap64
+000521c8 g     O .rodata	00000044 _nl_C_LC_CTYPE_class_blank
+00040b55 g     F .text	00000018 __openat64_2
+000114d0 g     F .text	0000001c __socket
+00041815 g     F .text	000000ec _dl_tlsdesc_lazy_resolver_fixup
+000409f5 g     F .text	00000030 __lxstat64
+00010dc1 g     F .text	00000010 setlogmask
+00008b8d g     F .text	000001a4 __libc_setup_tls
+0004dfd4 g     O .rodata	00000054 _IO_file_jumps
+0001d205 g     F .text	0000001e ___asprintf
+00045981  w    F .text	000000f8 profil
+0003f999  w    F .text	00000044 strsep
+0000e641  w    F .text	00000070 cfree
+00043bcd  w    F .text	00000008 __strtof_l
+0003450d  w    F .text	00000018 isnan
+00025a01 g     F .text	00000204 __libc_fork
+000264e4 g     F .text	0000001c __close_nocancel
+0001e271 g     F .text	00000046 _IO_vsscanf
+000699a8 g     O .data	00000004 _dl_init_static_tls
+00040769  w    F .text	00000022 timelocal
+0006ab38 g     O .bss	00000008 _dl_hwcap_mask
+0006aee0 g     O .bss	00000008 __new_exitfn_called
+0006a5d4 g     O .bss	00000004 __fork_lock
+00010631 g     F .text	00000044 __fcntl_nocancel
+0003f999 g     F .text	00000044 __strsep_g
+0002144d g     F .text	00000048 _IO_str_init_static_internal
+0004a4e1 g     F __libc_freeres_fn	00000030 _nl_finddomain_subfreeres
+0000eb5d  w    F .text	00000208 valloc
+00027261 g     F .text	00000050 __wctrans
+00069968 g     O .data	00000004 _dl_stack_flags
+00051184 g     O .rodata	0000000d _nl_category_name_sizes
+0002534d g     F .text	00000060 _nl_get_alt_digit
+000344f1  w    F .text	0000001a isinfl
+000413fd g     F .text	00000280 _dl_mcount
+00040b70 g     F .text	0000001c __libc_lseek
+0002c5c5 g     F .text	00000094 _dl_next_tls_modid
+00016f8d g     F .text	00000036 _fitoa
+0003450d  w    F .text	00000018 isnanl
+0001d001 g     F .text	0000008c __handle_registered_modifier_mb
+0001dc5d  w    F .text	00000006 _IO_fopen
+0002cc2d g     F .text	0000001c _dl_mcount_wrapper_check
+0001e8f9 g     F .text	0000005a _IO_wdefault_finish
+000200b1 g     F .text	00000078 _IO_new_file_write
+0001d11d  w    F .text	000000c8 register_printf_type
+0000f5f5  w    F .text	00000088 mallinfo
+000694a0 g     O .data	00000004 .hidden _IO_stderr
+000124f5 g     F .text	00000014 __ctype_b_loc
+00011390 g     F .text	00000020 __mremap
+0001c169 g     F .text	00000d50 __printf_fphex
+000113d0  w    F .text	00000068 __connect
+00049fb1 g     F .text	00000026 .hidden _Unwind_GetLanguageSpecificData
+0003f975 g     F .text	00000024 __strndup
+00000000  w      *UND*	00000000 _nl_current_LC_NAME
+0006af48 g     O .bss	00000004 _dl_init_all_dirs
+0002c7fd g     F .text	00000016 _dl_allocate_tls
+00022641  w    F .text	00000008 localtime_r
+0006aed8 g     O .bss	00000004 _dl_tls_static_nelem
+0002d3f1 g     F .text	0000000c __gconv_get_modules_db
+00023b9d g     F .text	00000448 __tzfile_compute
+000259e0 g     F .text	0000001c __uname
+0001ec75 g     F .text	00000034 _IO_sputbackwc
+00025855 g     F .text	00000040 __opendirat
+0002e34d g     F .text	000002ec __gconv_read_conf
+000416b5 g     F .text	0000000e __libc_dlclose
+000271fd  w    F .text	00000010 twalk
+0002dce1 g     F .text	000000a0 __gconv_close_transform
+0002c879 g     F .text	0000005c _dl_tls_get_addr_soft
+000207bd  w    F .text	00000078 _IO_file_attach
+0003f9dd  w    F .text	00000080 argz_create_sep
+0004950d g     F .text	0000002c .hidden _Unwind_VRS_Get
+0006ac6c g     O .bss	00000004 __timezone
+0005f5e8 g     O .rodata	00000004 _sys_nerr_internal
+0004c778 g     O .rodata	00000024 _nl_C_LC_NUMERIC
+00021eb5  w    F .text	00000006 wmemmove
+0001edb1 g     F .text	00000012 _IO_unsave_wmarkers
+00049a01 g     F .text	00000000 .hidden __gnu_Unwind_Restore_WMMXC
+000206e5 g     F .text	000000d8 _IO_file_open
+00048cbd g     F .text	0000001a .hidden __aeabi_uidivmod
+00029099 g     F .text	00000568 _dl_map_object
+000221ed g     F .text	000001bc __mbsnrtowcs
+0006afc8 g     O .bss	00000004 __libc_missing_rt_sigs
+0004a9cd g     F __libc_freeres_fn	000000a4 _nl_archive_subfreeres
+00000000 g       .tdata	00000004 __libc_tsd_LOCALE
+0001df09  w    F .text	00000154 fwrite
+0000a85d g     F .text	00000058 _IO_list_unlock
+00026500  w    F .text	00000068 __close
+00010601 g     F .text	00000030 __fxstat64
+00049f69 g     F .text	0000002a .hidden __gnu_unwind_frame
+00034e45 g     F .text	0000006a __mpn_mul_1
+00026690  w    F .text	0000001c access
+00025c39 g     F .text	0000000e __getuid
+0004d73c g     O .rodata	00000024 _itoa_upper_digits
+00049a95 g     F .text	00000022 .hidden _Unwind_ForcedUnwind
+00069c08 g       *ABS*	00000000 _edata
+00069984 g     O .data	00000018 _dl_load_lock
+00015871 g     F .text	000001ec qsort_r
+00009bed g     F .text	00000048 _IO_switch_to_get_mode
+0006b08c g       *ABS*	00000000 _end
+00040c51 g     F .text	00000128 _dl_fixup
+00035e71 g     F .text	000050e2 _IO_vfscanf
+00020835  w    F .text	0000001a _IO_do_write
+00016f59 g     F .text	00000032 _fitoa_word
+00040981 g     F .text	00000074 __fdopendir
+000423d1 g     F .text	00000018 __strtof_internal
+0006b040 g     O .bss	00000034 _nl_locale_file_list
+00000000  w      *UND*	00000000 _nl_current_LC_COLLATE
+0003f031 g     F .text	00000218 _IO_getdelim
+0003af55  w    F .text	00000006 vfscanf
+00032ead g     F .text	00000010 __gconv_release_cache
+00041a65  w    F .text	00000020 strtouq
+000231e9 g     F .text	00000860 __tzfile_read
+0001d899 g     F .text	000001e8 __new_fclose
+0001ebe5 g     F .text	00000090 __wuflow
+00025c79 g     F .text	00000690 __sysconf
+00015551 g     F .text	00000024 __sigaction
+00021e4d g     F .text	00000024 __argz_stringify
+0000ef7d g     F .text	00000324 __libc_calloc
+000344f1 g     F .text	0000001a __isinfl
+0006acb8 g     O .bss	00000004 __curbrk
+0002da59 g     F .text	00000070 __gconv_compare_alias
+0003afc5 g     F .text	000038f4 __vfwprintf
+00026f49 g     F .text	00000028 __tfind
+00069b54 g     O .data	00000074 _nl_global_locale
+0006af4c g     O .bss	00000004 _dl_verbose
+0000a0ad g     F .text	0000000a _IO_default_seekoff
+0002c4f9 g     F .text	00000020 _dl_dprintf
+00045919 g     F .text	00000030 __strncasecmp_l
+00009de5 g     F .text	00000038 _IO_doallocbuf
+0002bf3d g     F .text	00000110 _dl_signal_error
+0006af50 g     O .bss	00000004 _dl_phnum
+0000a455  w    F .text	000001bc _flushlbf
+00068fec g     O .data.rel.ro	00000004 __stack_prot
+0004d438 g     O .rodata	00000023 __strtol_ul_rem_tab
+0005f660 g     O .rodata	00000078 __libio_codecvt
+000258a1 g     F .text	0000004c __closedir
+00009349 g     F .text	00000318 __libc_message
+000110b5  w    F .text	00000218 get_nprocs
+0006af54 g     O .bss	00000004 _dl_profile_map
+00009bcd g     F .text	00000020 _IO_switch_to_backup_area
+000454a9 g     F .text	00000128 __dlerror
+00009071 g     F .text	00000010 exit
+0006a540  w    O .bss	00000004 __free_hook
+00000000  w      *UND*	00000000 _nl_current_LC_ADDRESS_used
+0002ee21 g     F .text	00000340 __gconv_transform_internal_ucs4le
+00041f3d g     F .text	00000484 ____strtoull_l_internal
+00010e20 g     F .text	0000001c __munmap
+00026c25 g     F .text	0000007c __writev
+0000001c g       .tbss	00000004 __libc_tsd_CTYPE_TOUPPER
+00000000  w      *UND*	00000000 __pthread_setspecific
+0000f485 g     F .text	00000026 __malloc_usable_size
+00032521 g     F .text	0000026c __gconv_transliterate
+000499bd g     F .text	00000000 .hidden __gnu_Unwind_Save_WMMXD
+0002641d g     F .text	000000a0 __openat
+0005f3cc g     O .rodata	0000021c _sys_errlist_internal
+00016735  w    F .text	00000010 __strtoul_l
+000694a8 g     O .data	00000004 .hidden _IO_stdin
+0004de9c g     O .rodata	00000054 _IO_wfile_jumps_mmap
+0001e7e5 g     F .text	0000004c _IO_wsetb
+0001d1e5 g     F .text	0000001e __fprintf
+00026bc5  w    F .text	00000060 brk
+0002292d g     F .text	00000070 __tzstring
+0004c64c g     O .rodata	00000024 _nl_C_LC_MESSAGES
+000171bd g     F .text	00003654 _IO_vfprintf
+000225f9 g     F .text	00000048 __wcsmbs_named_conv
+0001e161 g     F .text	0000010e _IO_seekoff
+00011b11 g     F .text	0000028c _dl_aux_init
+0006ab20 g     O .bss	00000008 _dl_hwcap
+0005e110 g     O .rodata	00000090 _itowa_upper_digits
+0003f919 g     F .text	0000005a _IO_wfile_doallocate
+00008e61 g     F .text	00000008 .hidden __libc_do_syscall
+000123c1 g     F .text	00000104 __assert_fail_base
+0006b004 g     O .bss	00000004 __use_tzfile
+00048f89  w    F .text	0000000c .hidden __aeabi_idiv0
+000511a4 g     O .rodata	00000089 _nl_category_names
+0002641d  w    F .text	000000a0 openat
+00041901 g     F .text	00000030 _dl_tlsdesc_resolve_hold_fixup
+0005df3c g     O .rodata	0000000f _nl_C_codeset
+0006af58 g     O .bss	00000004 _dl_initfirst
+0003f62d g     F .text	00000028 fileno
+0001536d g     F .text	0000003c __setfpucw
+00010ccd g     F .text	00000012 vsyslog
+0002107d g     F .text	00000038 _IO_str_underflow
+00015575 g     F .text	00000064 __sigprocmask
+00008e70 g     F .text	00000008 _setjmp
+0001e539 g     F .text	0000006c fgets_unlocked
+00012509 g     F .text	00000014 __ctype_toupper_loc
+0001d265 g     F .text	0000004a __funlockfile
+0004ac30 g     O .rodata	00000004 _IO_stdin_used
+00010569 g     F .text	00000058 _exit
+0006996c g     O .data	00000018 _dl_load_write_lock
+0002cc58 g     F .text	00000008 .hidden _dl_tlsdesc_return
+0005fa20 g     O .rodata	00000023 __strtol_ull_rem_tab
+0000de19 g     F .text	00000384 __malloc_set_state
+000257a1 g     F .text	000000b4 __alloc_dir
+00040955 g     F .text	0000002c __getdents64
+0004d128 g     O .rodata	00000009 _nl_default_default_domain
+0006afbc g     O .bss	00000004 __libc_argv
+0000893d g     F .text	00000190 __libc_start_main
+00011515 g     F .text	00000060 __lll_lock_wait_private
+0000f760 g     F .text	00000060 strlen
+00027225  w    F .text	0000003c lseek64
+00026380  w    F .text	00000068 open
+0004922d  w    F .text	00000006 .hidden __aeabi_unwind_cpp_pr1
+00069960  w    O .data	00000004 program_invocation_name
+000416c5 g     F .text	0000002c __libc_dlsym
+00045db9 g     F .text	000000b8 _dl_show_scope
+00026620 g     F .text	00000068 __libc_write
+0003af55 g     F .text	00000006 __vfscanf
+00010675  w    F .text	0000009c __fcntl
+0001e47d  w    F .text	000000bc vdprintf
+0000a041 g     F .text	00000016 _IO_init
+00031d85 g     F .text	00000710 __gconv_transform_internal_ucs2reverse
+00025a01  w    F .text	00000204 __fork
+000523c0 g     O .rodata	00000048 _nl_C_LC_CTYPE_class_lower
+0006af5c g     O .bss	00000004 _dl_all_dirs
+00015ee5 g     F .text	00000040 __setenv
+00016011 g     F .text	00000094 __clearenv
+000214d1 g     F .text	0000001c strchr
+0002c8d5 g     F .text	00000098 _dl_add_to_slotinfo
+0000e6b1 g     F .text	000001ec __realloc
+0006b030 g     O .bss	00000004 __gconv_alias_db
+0000a805 g     F .text	00000004 _IO_iter_end
+0000f67d g     F .text	00000004 __mallopt
+0001dc65  w    F .text	00000124 fputs
+000355b5 g     F .text	00000286 _quicksort
+00049fd9 g     F .text	00000006 .hidden _Unwind_GetDataRelBase
+00020d6d g     F .text	000001d8 _IO_new_file_underflow
+00069070 g       .data	00000000 __data_start
+00045645 g     F .text	000000c0 _dlerror_run
+0000e4d9 g     F .text	00000168 __malloc_get_state
+00048a4d g     F .text	00000012 _dl_sym
+00009661 g     F .text	00000014 __libc_fatal
+00011345 g     F .text	0000000c __get_phys_pages
+00010711 g     F .text	00000054 __sbrk
+00010e40  w    F .text	0000001c mprotect
+0000a7cd g     F .text	0000000a _IO_default_seek
+00026f71 g     F .text	0000028c __tdelete
+00026690 g     F .text	0000001c __access
+0006b014 g     O .bss	00000014 _r_debug
+0006b080 g     O __libc_freeres_ptrs	00000004 __printf_va_arg_table
+0000f4ad g     F .text	00000148 __malloc_stats
+000258a1  w    F .text	0000004c closedir
+0001e831 g     F .text	000000c8 _IO_wdefault_pbackfail
+0005f3cc g     O .rodata	0000021c __sys_errlist_internal
+0006af60 g     O .bss	00000004 _dl_osversion
+00069080 g     O .data	00000004 _IO_list_all
+00000000  w      *UND*	00000000 _Jv_RegisterClasses
+0003fa5d g     F .text	00000078 __argz_add_sep
+00020f45 g     F .text	00000138 _IO_new_file_overflow
+000417e5 g     F .text	00000030 __libc_dlopen_mode
+00015f25 g     F .text	000000ec __unsetenv
+00020135 g     F .text	000002dc _IO_new_file_seekoff
+00040411 g     F .text	00000358 __mktime_internal
+0001e3a9  w    F .text	000000d4 vasprintf
+0003af55 g     F .text	00000006 ___vfscanf
+0002c44d g     F .text	00000052 _dl_sysdep_read_whole_file
+000104cd  w    F .text	0000009a strchrnul
+00000008 g       .tdata	00000004 _nl_current_LC_MONETARY
+000263f1 g     F .text	0000002c __openat_nocancel
+00010675  w    F .text	0000009c fcntl
+00023021  w    F .text	00000094 tzset
+000105c0  w    F .text	0000001c sched_yield
+00012015 g     F .text	00000224 _dl_addr
+00011351 g     F .text	0000000c __get_avphys_pages
+0001d08d g     F .text	00000090 __handle_registered_modifier_wc
+00048f6d g     F .text	0000001a .hidden __aeabi_idivmod
+0004c7b8 g     O .rodata	00000024 _nl_C_LC_PAPER
+0002c0b5 g     F .text	00000076 _dl_catch_error
+0000982d g     F .text	000001c4 _IO_un_link
+00020431 g     F .text	00000038 _IO_file_setbuf_mmap
+0006999c g     O .data	00000004 _dl_make_stack_executable_hook
+0006af64 g     O .bss	00000004 _dl_inhibit_rpath
+000112cd  w    F .text	00000078 get_nprocs_conf
+0000a701 g     F .text	000000ca _IO_default_pbackfail
+00011444 g     F .text	0000001c __send_nocancel
+0002cc60 g     F .text	00000014 .hidden _dl_tlsdesc_undefweak
+0000f681  w    F .text	00000048 posix_memalign
+00000000  w      *UND*	00000000 __register_frame_info
+0001e47d g     F .text	000000bc _IO_vdprintf
+00021ec5  w    F .text	00000158 wcrtomb
+000699a0 g     O .data	00000004 _dl_correct_cache_id
+00047ea5 g     F .text	0000017e _dl_sort_fini
+0001dc5d g     F .text	00000006 __new_fopen
+00026500  w    F .text	00000068 close
+000113d0 g     F .text	00000068 __libc_connect
+00021e71 g     F .text	00000006 __wmemcpy
+0000a809 g     F .text	00000004 _IO_iter_next
+000465a5 g     F .text	000008ec _dl_close_worker
+00069964 g     O .data	00000004 _dl_pagesize
+0000eb5d g     F .text	00000208 __valloc
+00069940  w    O .data	00000004 __memalign_hook
+00000000  w      *UND*	00000000 _nl_current_LC_IDENTIFICATION
+00025c49 g     F .text	0000000e __geteuid
+00010355 g     F .text	000000c0 _wordcopy_bwd_aligned
+000171bd g     F .text	00003654 vfprintf
+00069088 g     O .data	000000a0 _IO_2_1_stderr_
+00069960 g     O .data	00000004 __progname_full
+000458f1 g     F .text	00000028 strpbrk
+00009bad g     F .text	00000020 _IO_switch_to_main_get_area
+00015425 g     F .text	0000007c raise
+0000a68d g     F .text	0000005e _IO_seekmark
+00052378 g     O .rodata	00000048 _nl_C_LC_CTYPE_class_alpha
+0000e641 g     F .text	00000070 free
+000272b1 g     F .text	0000003a __towctrans
+00025679 g     F .text	000000c2 _nl_get_era_entry
+00015575  w    F .text	00000064 sigprocmask
+0004df80 g     O .rodata	00000054 _IO_file_jumps_mmap
+00009fd1 g     F .text	00000038 _IO_old_init
+00000000  w      *UND*	00000000 __gmon_start__
+00045705 g     F .text	00000018 __libc_register_dlfcn_hook
+00047151 g     F .text	00000bfc _dl_map_object_deps
+0004c9d4 g     O .rodata	00000024 _nl_C_LC_IDENTIFICATION
+0006af68 g     O .bss	0000004c _dl_ns
+00033ded g     F .text	0000068c _nl_load_locale_from_archive
+00027261  w    F .text	00000050 wctrans
+
+
